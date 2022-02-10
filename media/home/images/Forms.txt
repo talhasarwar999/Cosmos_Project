@@ -1,0 +1,33 @@
+DJango simple forms
+models.py
+.save() override
+django fields update override
+https://docs.djangoproject.com/en/3.2/topics/forms/
+vaidation forms
+
+
+http://gsl-archive.mit.edu/media/programs/mexico-summer-2014/materials/djangobook.pdf
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms	
+
+
+django form=form api
+we use django code to make django forms that django would render forms code to html
+easy automate secured df
+does 3 works
+	prepare and restruct for rendering
+	create data for html
+	receive and process
+bound and unbound forms
+for bound form have data and be validate
+for unbound no data no chance to validate
+create forms.py in app
+from django import forms
+class FormName(forms.Form)
+ label=forms.type()
+does not provide form tag
+form form.as_p form.as_table form.as_ul form.name_of_field
+
+
+
+
+

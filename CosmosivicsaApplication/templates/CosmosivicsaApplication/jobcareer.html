@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+
+<div class="container mt-5 mb-5 career_page" style="max-width: 1250px;">
+    <div class="Career-Page-Banner-Image" style="
+          background-image: url(/media/home/images/capture2.png);
+        ">
+      <div class="Career-Page-Banner-Heading">
+        <h1>Position</h1>
+      </div>
+    </div>
+    <div class="mt-5">
+      <h6>
+        <p>Day by day we live new challenges in our lives, and one of the biggest challenges that we all face without exception in life is when we are about to look for work. To do this, high doses of will, perseverance and effort are needed in the face of such a dynamic world in which uncertainty is more present than ever. Make a difference and start your career at COSMOSIVICSA.</p>
+      </h6>
+    </div>
+  
+    <form action="/career/jobs/" method="GET">
+    <div class="row mt-5">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 Career-Page-Search">
+        <h3>Search for open position and apply</h3>
+        <div class="mt-md-5 mt-3 job-search">
+            <div id="search-box">
+              <input type="text" placeholder="Job" class="job" name="job" value="" />
+              <input type="text" placeholder="Country" name="country" value="" />
+            </div>
+          <div class="search-btn">
+            <button type="submit">Search</button>
+            <a href="viewalljobs/"><button>View All</button></a>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="row g-0 mt-5 mb-5">
+        <div class="col-md-12 jobs" id="first-job-section">
+            {% if alljobs %}
+            {% for job in alljobs %}
+            <div class="jobs-section">
+            <div>
+                <h3><a href="/careers/jobs/{{job.job_title}}">{{job.job_title}}</a></h3>
+                <h6>{{job.country}}</h6>
+                <h6>Job Category : <span> {{job.job_category}}</span></h6>
+            </div>
+            <div>
+                <a href="/careers/jobs/{{job.job_title}}">
+                <i class="fas fa-angle-right fa-2x float-right"></i>
+                </a>
+            </div>
+            {% endfor %}
+            {% else %}
+            <h3 class="text-center">No Job founds</h3>
+            {% endif %}
+        </div>
+</div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="mt-5">
+      <img class="Career-Page-Banner-Image" src="/media/home/images/COSMOSIVICSA_CAREERS_04.jpeg" alt="" />
+    </div>
+    <div class="mt-5">
+      <h6>
+        <p>Do not lose your focus and seek that which you are sure will make you happy. It is the same as we do with our clients, we meet their objectives in many different ways. We form creative, interdisciplinary teams that function as small dynamic studios, with all the resources and diversity of a global firm. At COSMOSIVICSA he will collaborate with industry experts in some of the services we offer: Architecture &amp; Design, Engineering Studies, Construction Management, Environmental Services and Program, Advisory &amp; Project Management.</p>
+  
+  <p>It is very important that on this path, you build a support network that encourages you every day to achieve your work goal. That is why we encourage our people to deepen their understanding by working in new places and different cultures. Wherever we are in the world, our shared goals and values ​​keep us grounded in what really matters.</p>
+      </h6>
+    </div>
+  
+    <div class="row  Related-Project">
+      <h4>Related News</h4>
+        
+  
+        <div class="col-md-4 g-2">
+            <a href="/news/construction-starts-for-the-new-project-of-cosmos-in-china/">
+            <div class="blog">
+                <img src="/media/media/News/Thumbnail/2021/09/27/06/42/15/FOS_Construction_.jpg" alt="" />
+                <h5>Construction starts for the new project of Cosmos in China</h5>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-4 g-2">
+            <a href="/news/mid-autumn-festival-celebration/">
+            <div class="blog">
+                <img src="/media/media/News/Thumbnail/2021/09/06/05/51/24/NEWSLETTER_14-min.jpg" alt="" />
+                <h5>Mid Autumn Festival celebration</h5>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-4 g-2">
+            <a href="/news/cosmos-architecture-awarded-by-the-italian-international-design-award-commission-iida/">
+            <div class="blog">
+                <img src="/media/media/News/Thumbnail/2021/09/06/05/51/24/21_IIDA_Italian_International_Design_Award_01.JPG" alt="" />
+                <h5>Cosmos Architecture awarded by the &quot;Italian International Design Award&quot; commission-iida</h5>
+            </div>
+            </a>
+        </div>
+    </div>
+  </div>
+  
+  {% endblock body %}  

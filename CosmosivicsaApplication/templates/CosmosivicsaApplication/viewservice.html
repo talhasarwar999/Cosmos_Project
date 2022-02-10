@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+{% load crispy_forms_tags %}
+<div class="container" id="news_banner" style="max-width: 1250px;">
+    <div class="row g-0">
+        <h1 class="text-center my-5"><strong>{{allservices.servicename}}</strong></h1>
+      <div class="Product-Page-Banner-Image m-0"
+        style="background-image: url(/media/{{allservices.service_images}});">
+        <div class="Product-Page-Banner-Heading">
+          <h5 id="">
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4 mb-4">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 single-page-sub-heading">
+      <h1>
+       <strong>{{allservices.main_title}}</strong>
+
+      </h1>
+      {% for pi in allservices.servicefk.all %}
+      {% if pi.title %}
+      <p class="my-3"> <strong>{{pi.title|safe}}</strong></p>
+      {% endif %}
+      {% if pi.paragraph %}
+        <p class="my-3">{{pi.paragraph|safe}}</p>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+    </div>
+
+    <div class="container" style="max-width: 1250px;">
+
+        <div class="row Related-Project">
+            <h4>Related Projects</h4>  
+            {% for related in rel_projects %}
+                <div class="col-md-4 g-2">
+                    <a href="/viewprojects/{{related.title}}">
+                        <div class="blog">
+                            <img src="/media/{{related.parent_images}}" alt="" />
+                            <h5>{{related.title}}</h5>
+                        </div>
+                    </a>
+                </div>
+                    {% endfor %}
+                
+            </div></div>    
+{% endblock body %}

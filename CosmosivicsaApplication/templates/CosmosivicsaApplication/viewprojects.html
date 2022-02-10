@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+
+<div class="container" style="max-width: 1250px;" id="project_video">
+    <div class="row g-0">
+         <div class="col-12 g-0 project-header">
+        <div class="Product-Page-Banner-Image" style="background-image: url(/media/{{viewprojects.parent_images}});"></div>
+            </div>            
+    </div>
+</div>
+<div class="container project-about" style="max-width: 1250px;">
+    <div class="row g-0" id="social-share-2">
+        <div class="col-md-4 g-0 address">
+            <h3>{{viewprojects.title}}</h3>
+            <h5>{% for c in viewprojects.countryname.all %}{{ c }} , {% endfor %} </h5>
+            <div class="social-share-1">
+                <span>Share in</span>    
+                    <a href="https://www.linkedin.com/company/cosmosivicsa" target="_blank">
+                        <!-- <i class="fab fa-linkedin"></i> -->
+                        <img src="/static/assets/img/linkdin.png" alt="">
+                    </a>   
+                                           
+                    <a href="https://twitter.com/" target="_blank">
+                        <!-- <i class="fab fa-twitter-square"></i> -->
+                        <img src="/static/assets/img/tweet.png" alt="">
+                    </a>
+                
+                    <a href="https://www.facebook.com/cosmosivicsa" target="_blank">
+                        <!-- <i class="fab fa-facebook-square"></i> -->
+                        <img src="/static/assets/img/fb.png" alt="">
+                    </a>
+                
+                  <a href="https://www.instagram.com/cosmosivicsa/" target="_blank">
+                        <!-- <i class="fab fa-instagram-square"></i> -->
+                        <img src="/static/assets/img/insta.png" alt="">
+
+                    </a>
+                
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-3"></div>
+        <div class="col-lg-3 col-md-5 g-0 contact-info">
+            <ul>
+                <li>
+                    <h4>Markets:</h4>
+                    <p id='market_type'>                      
+                        {% for m in viewprojects.marketname.all %}{{ m }} {% endfor %}    
+                    </p>
+                </li>
+                <li>
+                    <h4>Services:</h4>
+                    <p> 
+                        {% for s in viewprojects.servicename.all %}{{ s }} {% endfor %}    
+                    </p>
+                </li>
+                <li>
+                    <h4>Client:</h4>
+                    <p>{{viewprojects.client}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row g-0">
+        
+        <div class="col-lg-4 our-sale">
+            {% if viewprojects.desc_1%}
+            <p>{{viewprojects.desc_1}}</p>     
+            {% else %}
+                {% endif %}
+        </div>
+        
+        <div class="col-lg-4 g-0 map">
+            <div id="map">
+                {{viewprojects.location|safe}}
+              </div>
+        </div>
+
+
+        <div class="col-lg-4 Under-construction">
+            <ul>
+                {% if viewprojects.include %}
+                <li>
+                    <h4>Include:</h4>
+                    <p>{{viewprojects.include}}</p>
+                </li>
+                {% else %}
+                {% endif %}
+
+                {% if viewprojects.area %}
+                <li>
+                    <h4>Area:</h4>
+                    <p>{{viewprojects.area}}</p>
+                </li>
+                {% else %}
+                {% endif %}
+
+                {% if viewprojects.cost %}
+                <li>
+                    <h4>Cost:</h4>
+                    <p>{{viewprojects.cost}}</p>
+                </li>
+                {% else %}
+                {% endif %}
+                
+                {% if viewprojects.sustainability %}
+                <li>
+                    <h4>Status:</h4>
+                    <p>{{viewprojects.sustainability}}</p>
+                </li>
+                {% else %}
+            {% endif %}
+                
+
+                {% if viewprojects.status %}
+                    <li>
+                        <h4>Status:</h4>
+                        <p>{{viewprojects.status}}</p>
+                    </li>
+                    {% else %}
+                {% endif %}
+                
+                {% if viewprojects.key_highlights %}
+                <li>
+                    <h4>Status:</h4>
+                    <p>{{viewprojects.key_highlights}}</p>
+                </li>
+                {% else %}
+            {% endif %}
+                
+
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container recent-projects" style="max-width: 1250px;">
+<!-------**********************------- Our Project About Us Section END -------**********************------->
+{% for pi in viewprojects.imagg.all %}
+{% if pi.id|divisibleby:2 %}
+<div class="row g-0 recent-projects2">
+    <div class="col-md-6 project-details2" style="padding-left: 0px !important; padding-right: 79px;">
+        <h3>{{pi.title}}</h3>
+        <div>
+            <p>{{pi.paragraph|safe}}</p>
+        </div>
+    </div>     
+    <div class="col-md-6">
+        <img src="{{pi.image.url}}">
+    </div>
+    
+</div>
+
+{% else %}
+<div class="row g-0 recent-projects2 " >
+    <div class="col-md-6">
+        <img src="{{pi.image.url}}">
+    </div>
+
+    <div class="col-md-6 project-details2">
+        <h3>{{pi.title}}</h3>
+        <div>
+            <p>{{pi.paragraph|safe}}</p>
+        </div>
+    </div>
+    
+</div>
+{% endif %}
+{% endfor %}
+
+</div>
+
+<!-------**********************------- Our Project Gallery Section START -------**********************------->
+<div class="container" style="max-width: 1250px;">
+    <div class="row g-0">
+        <div class="col-12 m-3 m-sm-0 d-flex justify-content-center">
+            {% if viewprojects.desc_2%}
+            <h4>The Union of Quart now has 12 collectors sections for an optimal operation</h4>
+            {% else %}
+            {% endif %}
+        </div>
+    </div>
+    
+     <div class="row mt-2 mb-2">    
+        {% for img in viewprojects.imag.all %}
+        <div class="col-md-4 col-6 g-2">
+            <div class="blog">
+            <a href="{{img.images.url}}" data-lightbox="img">
+                <img src="{{img.images.url}}" alt="" style="width: 100%;" />
+            </a>
+            </div>
+        </div>
+        {% endfor %} 
+    </div>
+    </div> 
+ 
+</div>
+</div>
+
+<div class="container" style="max-width: 1250px;">
+
+    <div class="row Related-Project">
+        <h4>Related Projects</h4>  
+        {% for related in related_projects %}
+            <div class="col-md-4 g-2">
+                <a href="/viewprojects/{{related.title}}">
+                    <div class="blog">
+                        <img src="/media/{{related.parent_images}}" alt="" />
+                        <h5>{{related.title}}</h5>
+                    </div>
+                </a>
+            </div>
+                {% endfor %}
+            
+        </div></div>
+<div class="container" style="max-width: 1250px;">
+            <div class="row Related-News">
+              <h4>Related News</h4>
+              {% for related in get_related_news %}
+                <div class="col-md-4 g-2">
+                  <a href="/viewnews/{{related.title}}">
+                    <div class="blog">
+                      <img src="/media/{{related.parent_image}}" alt="" />
+                      <h5>{{related.title}}</h5>
+                    </div>
+                  </a> 
+                </div>
+                {% endfor %}
+              </div>
+              </div>
+{% endblock body %}

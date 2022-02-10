@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+<div class="container" id="news_banner" style="max-width: 1250px;">
+    <div class="row g-0">
+      <div class="Product-Page-Banner-Image m-0"
+        style="background-image: url(/media/{{viewnew.parent_image}});">
+        <div class="Product-Page-Banner-Heading">
+          <h5 id="news_type">
+                              
+            {% for n in viewnew.newsname.all %}{{ n }} , {% endfor %}
+                         
+          </h5>
+          <h2>{{viewnew.title}}</h2>
+          <h5>
+          {% for n in viewnew.countryname.all %} 
+          {{n}},
+          {% endfor %}
+        </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container project-about" id="news_about" style="max-width: 1250px;">
+    <div class="row g-0"> 
+        <div class="col-md-4 g-0 address">
+          <h3>{{viewnew.title}}</h3>
+          <h5>
+          {% for n in viewnew.countryname.all %} 
+          {{n}},
+          {% endfor %}
+          </h5>
+        </div>
+        <div class="col-md-4 hidden-sm-and-down"></div>
+        <div class="col-md-4 news-social">
+  
+          <div class="social-share-1">
+            <span>Share in</span>
+                                      
+            <a href="https://www.linkedin.com/company/cosmosivicsa" target="_blank">
+                <!-- <i class="fab fa-linkedin"></i> -->
+                <img src="/static/assets/img/linkdin.png" alt="">
+            </a>   
+            
+
+                                       
+                <a href="https://twitter.com/" target="_blank">
+                    <!-- <i class="fab fa-twitter-square"></i> -->
+                    <img src="/static/assets/img/tweet.png" alt="">
+                </a>
+            
+
+            
+                <a href="https://www.facebook.com/cosmosivicsa" target="_blank">
+                    <!-- <i class="fab fa-facebook-square"></i> -->
+                    <img src="/static/assets/img/fb.png" alt="">
+                </a>
+            
+
+                                        
+                <a href="https://www.instagram.com/cosmosivicsa/" target="_blank">
+                    <!-- <i class="fab fa-instagram-square"></i> -->
+                    <img src="/static/assets/img/insta.png" alt="">
+
+                </a>
+          </div>
+        </div>
+    </div>
+  </div>
+    </div>
+    <!-------**********************------- News  Recent Project Section Start -------**********************------->
+
+    <div class="container recent-projects" style="max-width: 1250px;">
+      
+          {% for pi in viewnew.imagge.all %}
+          {% if pi.id|divisibleby:2 %}
+          <div class="row g-0 recent-projects2" >
+            <div class="col-md-6 project-details2" style="padding-left: 0px !important; padding-right: 79px;">
+              <h3></h3>
+              <div>
+                <p>{{pi.paragraph|safe}}</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="{{pi.image.url}}">
+            </div>
+          
+          </div>
+         
+          {% else %}
+          <div class="row g-0 recent-projects2" >
+            <div class="col-md-6">
+              <img src="{{pi.image.url}}">
+            </div>
+            <div class="col-md-6 project-details2" >
+              <h3></h3>
+              <div>
+                <p>{{pi.paragraph|safe}}</p>
+              </div>
+            </div>
+          </div>
+         {% endif %}
+          
+          {% endfor %}
+      <!--*******-- News  recent-projects2 END --*******-->
+
+    </div>
+
+
+    <div class="row g-0">
+      <div class="col-12 m-3 m-sm-0 d-flex justify-content-center gallery">
+        <h4 class="mt-3 mb-4"></h4>
+      </div>
+    </div>
+    <div class="container" style="max-width: 1250px;">
+
+      <div class="row Related-Project">
+          <h4>Related Projects</h4>  
+          {% for related in get_related_projects %}
+              <div class="col-md-4 g-2">
+                  <a href="/viewprojects/{{related.title}}">
+                      <div class="blog">
+                          <img src="/media/{{related.parent_images}}" alt="" />
+                          <h5>{{related.title}}</h5>
+                      </div>
+                  </a>
+              </div>
+                  {% endfor %}
+              
+          </div></div>
+    
+  <div class="container" style="max-width: 1250px;">
+    <div class="row Related-News">
+      <h4>Related News</h4>
+      {% for related in related_news %}
+        <div class="col-md-4 g-2">
+          <a href="/viewnews/{{related.title}}">
+            <div class="blog">
+              <img src="/media/{{related.parent_image}}" alt="" />
+              <h5>{{related.title}}</h5>
+            </div>
+          </a> 
+        </div>
+        {% endfor %}
+      </div>
+      </div>
+{% endblock body %}

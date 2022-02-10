@@ -1,0 +1,557 @@
+/*********************************** Font Family Hurme  ************************************/
+@font-face {
+    font-family: Hurme;
+    src: url("../font/HurmeGeometricSans1.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hurme-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hurme-semi-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 SemiBold.otf") format("opentype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Hurme";
+}
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+/********************* Navbar START *********************/
+.navbar.bg-light {
+    background-color: #ffff !important;
+    --bs-bg-opacity: 0;
+    height: 65px;
+    box-shadow: rgb(51 63 86 / 33%) 0px 2px 2px;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav {
+    height: 65px;
+
+}
+
+.navbar-expand-lg .navbar-nav li.nav-item {
+    padding: 14px 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000 !important;
+    height: 65px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #000;
+    margin-bottom: -4px;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    border-bottom: 2px solid #000;
+    margin-bottom: -4px;
+}
+
+.navbar.navbar-expand-lg .dropdown:hover>.dropdown-menu {
+    display: block;
+    box-shadow: rgb(51 63 86 / 33%) 0px 2px 8px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.mega-menu,
+.mega-menu3 {
+    width: 550px;
+    overflow: hidden;
+    padding: 20px 30px;
+    background: #fff;
+}
+
+.mega-menu .row h4,
+.mega-menu2 .row h4,
+.mega-menu3 h4 {
+    font-size: 20px;
+}
+
+.mega-menu .row ul li,
+.mega-menu2 .row ul li,
+.mega-menu3 .row ul li {
+    padding: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: -36px;
+}
+
+.mega-menu .row ul li a,
+.mega-menu2 .row ul li a,
+.mega-menu3 .row ul li a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.dropdown-menu.mega-menu {
+    right: 50%;
+    left: -5%;
+    top: 45px;
+    margin-top: 0rem;
+    background-color: #fff;
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+
+ul.dropdown-menu.mega-menu.show a,
+.dropdown-menu.mega-menu2 a,
+.dropdown-menu.mega-menu3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.mega-menu .row ul li a:hover,
+.mega-menu2 .row ul li a:hover,
+.mega-menu3 .row ul li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.dropdown-menu.mega-menu2 {
+    top: 45px;
+    left: 0px;
+    margin-top: 0rem;
+    background-color: #fff;
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+
+.dropdown-menu.mega-menu3 {
+    top: 45px;
+    left: -100px;
+    margin-top: 0rem;
+    background-color: #fff;
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+
+.mega-menu .row .button,
+.mega-menu2 .row .button,
+.mega-menu3 .row .button {
+    margin-top: 20px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    background-color: #000000c2;
+    font-size: 14px;
+    width: 70%;
+    height: 25px;
+    transition: width 2s;
+}
+
+.mega-menu .row .button:hover, .mega-menu2 .row .button:hover, .mega-menu3 .row .button:hover {
+    font-weight: 600;
+    width: 75%;
+}
+
+nav.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light.active{
+    height: 50px;
+}
+nav.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light.active .navbar-brand img{
+   height: 25px;
+}
+nav.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light.active .navbar-nav .nav-link {
+    font-size: 13px;
+}
+.navbar.navbar-expand-lg.active .dropdown:hover>.dropdown-menu {
+    margin-top: 13px;
+}
+.mega-menu .col-md-6:nth-child(2) {
+    padding-left: 40px;
+}
+.mega-menu .row .col-md-6:nth-child(2) .button {
+    width: 80%;
+}
+.mega-menu .row .col-md-6:nth-child(2) .button:hover{
+    width: 85%;
+}
+.mega-menu2 {
+    width: 360px;
+    overflow: hidden;
+    padding: 20px 30px;
+    background: #fff;
+}
+/********************** Navbar END **********************/
+
+/********************** Market Section  CSS START  ***************************/
+.main-container {
+    background-color: #f1f1f1;
+
+}
+
+.main-container h1 {
+    font-family: "Hurme-bold";
+    color: black;
+    font-size: 50px;
+    line-height: 72.8px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.main-container p {
+    font-size: 16px;
+    line-height: 27.2px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.select-category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.select-category h5 {
+    font-family: "Aktiv Grotesk";
+    font-size: 18px;
+    padding-bottom: 0px !important;
+    color: #808080;
+}
+
+.select-category span {
+    font-size: 18px;
+    color: black;
+}
+
+/********************** Market Section  CSS END  ***************************/
+
+/********************** Services Page Section  CSS START  ***************************/
+
+#services{ 
+    background-color: unset;
+}
+
+/********************** Services Page Section  CSS END  ***************************/
+
+/******************************* Blog Image CSS START **********************************/
+
+.services,
+.markets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-more {
+    display: none;
+}
+
+.blog {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.blog img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.9;
+    transform: scale(1);
+    transition: 0.2s ease-in-out;
+    object-position: bottom;
+}
+
+.blog:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.9s ease-in-out;
+
+}
+
+.blog h5 {
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    padding: 8px;
+    background: #00000047;
+}
+
+/******************************* Blog Image CSS END **********************************/
+
+
+/******************************* single-page-main CSS START *******************************/
+
+.single-page-heading {
+    text-align: center;
+}
+
+.single-page-heading h1 {
+    font-family: 'Hurme-bold';
+    color: black;
+    font-size: 50px;
+    line-height: 72.8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.single-page-heading .video {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.single-page-heading img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.single-page-sub-heading h4 {
+    font-family: 'Hurme-semi-bold';
+    font-size: 27px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+.single-page-sub-heading p {
+    text-align: justify;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.policy-term {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.policy-term a {
+    text-decoration: none;
+    color: black;
+}
+
+.policy-term a:hover {
+    text-decoration: underline;
+}
+
+/****************  single-page-main CSS End **************/
+
+/****************   Related Project CSS Start ***************/
+
+.Related-Project {
+    margin-top: 30px;
+}
+
+.Related-Project h4 {
+    text-align: center;
+    font-family: "Hurme-semi-bold";
+    font-size: 27px;
+}
+
+
+/****************   Related Project CSS End ***************/
+
+
+/****************   Related News CSS Start ***************/
+
+.Related-News {
+    margin-top: 30px;
+}
+
+.Related-News h4 {
+    text-align: center;
+    font-family: "Hurme-semi-bold";
+    font-size: 27px;
+}
+
+
+/****************   Related News CSS End ***************/
+
+/****************  News Main Page START ****************/
+.news-page a {
+    text-decoration: none;
+}
+
+/****************  News Main Page END ****************/
+
+/********************* Footer CSS Start ******************/
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer-logo {
+    width: 50px;
+}
+.social_links2{
+    margin-right: 50px;
+}
+.social_links1{
+    margin-left: 50px;
+}
+
+
+/********************** Footer **********************/
+.footer_address {
+    background-color: #2a2728;
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer_address h2 {
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: 'Hurme-bold';
+}
+
+.office_address {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.office_address h6 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact_info {
+    margin: 20px 0px;
+}
+
+.phone_no a,
+.email_add a {
+    color: #fff;
+}
+
+.phone_no .fa-phone {
+    transform: scaleX(-1);
+    color: #fff;
+}
+
+.phone_no {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+.phone_no .icon{
+    margin-right: 5px;
+}
+.phone_no span{
+    font-size: 14px;
+}
+
+.social_icons {
+    display: flex;
+    margin-left: -4px;
+    margin-top: -5px;
+}
+
+.social_icons img {
+    width: 35px;
+    margin-left: 4px;
+}
+
+/********************** Useful Links **********************/
+.usefull_links {
+    margin-top: 20px;
+}
+.usefull_links h6 {
+    font-size: 16px;
+    color: #fff;
+}
+.social_links1 a , .social_links2 a {
+    margin: 0px 20px;
+}
+
+/********************* Footer CSS End  ******************/
+
+/********************** Cookies START **********************/
+.wrapper {
+    position: fixed;
+    z-index: 99999999;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.content {
+    position: relative;
+    background: #2a2728;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+}
+
+button.item {
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.wrapper.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+::selection {
+    color: #fff;
+    background: #FCBA7F;
+}
+
+/********************** Cookies START END**********************/

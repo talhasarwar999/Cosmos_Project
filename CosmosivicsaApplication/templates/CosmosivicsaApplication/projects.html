@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+{% load crispy_forms_tags %}
+{% load customtag %}
+
+    <div class="container mt-2 mb-5" id="all_projects" style="max-width: 1250px;">
+      <!--*********** Heading and Banner Image Start ************  -->
+      <div class="row">
+        <div class="col-12 Project-page-heading">
+          <h1>Projects</h1>
+          <form action="" method="get">
+            <div class="Project-Page-select-category">  
+                {{ projectfilter.form|crispy }}
+        
+                <button class="btn btn-primary" type="submit">Search</button>
+             </div>
+            </form> 
+        </div>
+      </div>
+  
+
+    {% for proj in project|shuffle %} 
+    <a href="/viewprojects/{{proj.title}}">
+      <div class="Product-Page-Banner-Image" style="background-image: url(/media/{{proj.parent_images}})">
+        <div class="Product-Page-Banner-Heading">
+  
+          <h5 class='project_type'>
+            
+            {% for m in proj.marketname.all %}
+             {{m}},
+             {% endfor %} 
+            </h5>
+            
+            <h2>{{proj.title}}</h2>
+            
+          
+          <h5>{% for c in proj.countryname.all %}{{ c }} , {% endfor %} </h5>
+        </div>
+      </div>
+    </a>
+    {% endfor%}
+    {% endblock body %}

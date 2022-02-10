@@ -1,0 +1,399 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+
+<div class="container">
+    <div class="row">
+      <div class="col-12 contact-banner">
+        <img src="/media/home/images/MAIN_IMAGE.jpeg" alt="">
+        <h3>Contact Us</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container offices">
+    <div class="row mt-4 mb-4">
+      <h3 class="text-center">Our Offices</h3>
+  
+      {% for office in our_offices %}
+      <div class="col-md-4 g-2 mb-3">
+          <div class="blog">
+            <img src="/media/{{office.image}}" alt="" />
+            <h5>
+              {% for con in office.countryname.all %}
+              {{con}} -
+              {% endfor %}
+            </h5>
+          </div>
+        <!-- </a> -->
+        <div class="office-address">
+          <p>{{office.address}}</p>
+          <div class="address_icon">
+            <a href="{{office.location}}" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+          <a href="tel:+34610732623"><i class="fa fa-phone" aria-hidden="true"></i></a>
+          <a href="mailto:info@cosmosivicsa.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-2 hidden-lg"></div>
+      <div class="col-lg-8 msg-box">
+        <h3>Send A Message</h3>
+        <p>Select a category for your inquiry.</p>
+        <ul class="nav-tabs nav nav-justified contact-form-tabs">
+          <li class="nav-item">
+            <a href="#press" class="nav-link active" data-bs-toggle="tab">Press</a>
+          </li>
+          <li class="nav-item">
+            <a href="#acadmic_r" class="nav-link" data-bs-toggle="tab">ACADEMIC REQUESTS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#career" class="nav-link" data-bs-toggle="tab">CAREERS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#b_inquery" class="nav-link" data-bs-toggle="tab">BUSINESS INQUIRIES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#other" class="nav-link" data-bs-toggle="tab">other</a>
+          </li>
+        </ul>
+  
+        <!-----******************----- Press Form Section START -----******************----->
+        <div class="tab-content container">
+          <div class="tab-pane active" id="press">
+  
+  
+            <form action="/press_contact/" class="press-form" id="press-form" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <input type="hidden" name="form_type" value="press">
+  
+              <div class="contact-info">
+                <h5>Your Contact Information</h5>
+                <p>Please let us know who you are, and how we can get back in touch.</p>
+                <input type="text" placeholder="First Name" name="first_name" required/>
+                <input type="text" placeholder="Last Name" name="last_name" required/>
+                <input type="text" placeholder="Publication or company" name="public_company" />
+                <input type="email" placeholder="Email address" name="email" id="p_email" required />
+                <div id="email-error"></div>
+                <div class="field-btns">
+                  <button class="next" id="next-1">NEXT</button>
+                </div>
+              </div>
+              <div class="project-info">
+                <h5>SELECT A PROJECT</h5>
+                <p>Which COSMOS project is your inquiry about? Please let us know so that we can send your message to
+                  the right office.</p>
+                <div class="search-project">
+                  <select name="project" id="all_projects" >
+                    <option value=''>Select</option>
+                    {% for proj in project %}
+                    <option value='{{proj.title}}'>{{proj.title}}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+  
+                <div class="more-info">
+                  <h5>Or select one of the following options:</h5>
+                  <div class="no-p"> 
+                    <input type="radio" id="not_project" name="project_options" value="I cannot find the pertinent COSMOS project in the list above" />
+                    <label for="not_project">I cannot find the pertinent COSMOS project in the list above</label>
+                  </div>
+                  <div class="more-p">
+                    <input type="radio" id="more_project" name="project_options" value="My inquiry is about more than three COSMOS projects" />
+                    <label for="more_project">My inquiry is about more than three COSMOS projects</label>
+                  </div>
+                  <div class="par-p">
+                    <input type="radio" id="not_particular" name="project_options"
+                      value="My inquiry is not about a particular COSMOS project" />
+                    <label for="not_ particular">My inquiry is not about a particular COSMOS project</label>
+                  </div>
+                </div>
+                <button class="r_btn" id="r_btn">Reset</button>
+                <div class="field-btns">
+                  <button class="prev" id="prev-1">Back</button>
+                  <button class="next" id="next-2">NEXT</button>
+                </div>
+              </div>
+              <!-----******************----- Project Info Section END -----******************----->
+  
+              <!-----******************----- Detail Message Section START -----******************----->
+              <div class="your_msg">
+                <h5>Enter Your Message</h5>
+                <textarea id="msg" class="p_msg" rows="5" cols="38" name="message" required></textarea>
+                <b id="p_msgError"></b>
+                <input type="file" name="message_file" id="p_file" />
+                <div class="field-btns">
+                  <button class="prev" id="prev-2">Back</button>
+                  <!-- <input type="submit" value="submit"> -->
+                  <button class="submit submit_form" id="p_submit">Submit</button>
+                </div>
+              </div>
+              <!-----******************----- Detail Message Section END -----******************----->
+  
+            </form>
+          </div>
+          <!-----******************----- Press Form Section END -----******************----->
+  
+          <!-----******************----- Acadmic Section START -----******************----->
+          <div class="tab-pane" id="acadmic_r">
+            <div class="acadmic_info">
+              <p>Due to the large number of messages that we receive, we
+                are only able to accommodate academic requests from PhD candidates or professors.
+                If this applies, please continue.</p>
+              <div class="field-btns">
+                <button class="next" id="next-3">NEXT</button>
+              </div>
+            </div>
+  
+            <form action="/academic_contact/" class="acadmic-form" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <input type="hidden" name="form_type" value="acadmic">
+              <!-----******************----- Acadmic Conatct Info Section START -----******************----->
+              <div class="aca-contact-info">
+                <h5>Your Contact Information</h5>
+                <p>Please let us know who you are, and how we can get back in touch.</p>
+                <input type="text" placeholder="First Name" name="first_name" required/>
+                <input type="text" placeholder="Last Name" name="last_name" required/>
+                <input type="text" placeholder="Acadmic Intitution" name="academic_intitution" />
+                <input type="text" placeholder="Your Degree or Position" name="degree" />
+                <input type="email" placeholder="Email address" name="email" required id="ac_email" />
+                <div id="email-error2"></div>
+                <div class="field-btns">
+                  <button class="next" id="next-4">NEXT</button>
+                </div>
+              </div>
+              <!-----******************----- Acadmic Conatct Info Section END -----******************----->
+  
+              <!-----******************----- Acadmic Project Info Section START -----******************----->
+              <div class="ac-project-info">
+                <h5>SELECT A PROJECT</h5>
+                <p>Which COSMOS project is your inquiry about? Please let us know so that we can send your message to
+                  the right office.</p>
+                <div class="ac-search-project">
+                    <select name="academicproject" id="all_projects" >
+                      <option value=''>Select</option>
+                      {% for proj in project %}
+                      <option value='{{proj.title}}'>{{proj.title}}</option>
+                      {% endfor %}
+                    </select>
+                </div>
+  
+                <div class="ac-more-info">
+                  <h5>Or select one of the following options:</h5>
+                  <div class="no-p">
+                    <input type="radio" id="not_project" name="project_select_option" value="I cannot find the pertinent COSMOS project in the list above" />
+                    <label for="not_project">I cannot find the pertinent COSMOS project in the list above</label>
+                  </div>
+                  <div class="more-p">
+                    <input type="radio" id="more_project" name="project_select_option" value="My inquiry is about more than three COSMOS projects" />
+                    <label for="more_project">My inquiry is about more than three COSMOS projects</label>
+                  </div>
+                  <div class="par-p">
+                    <input type="radio" id="not_particular" name="project_select_option"
+                      value="My inquiry is not about a particular COSMOS project" />
+                    <label for="not_ particular">My inquiry is not about a particular COSMOS project</label>
+                  </div>
+                </div>
+                <button class="r_btn" id="r_btn2">Reset</button>
+                <div class="field-btns">
+                  <button class="prev" id="prev-4">Back</button>
+                  <button class="next" id="next-5">NEXT</button>
+                </div>
+              </div>
+              <!-----******************----- Acadmic Project Info Section END -----******************----->
+  
+              <!-----******************----- Detail Message Section START -----******************----->
+              <div class="ac-your_msg">
+                <h5>Enter Your Message</h5>
+                <textarea id="msg" class="ac_msg" rows="5" cols="38" name="message" required></textarea>
+                <b id="ac_msgError"></b>
+                <input type="file" id="attachment" class="ac_file" name="message_file">
+                <div class="field-btns">
+                  <button class="prev" id="prev-5">Back</button>
+                  <button class="submit submit_form" id="ac_submit">Submit</button>
+                </div>
+              </div>
+              <!-----******************----- Detail Message Section END -----******************----->
+            </form>
+  
+          </div>
+          <!-----******************----- Acadmic Section END -----******************----->
+  
+          <!-----******************----- Career Section START -----******************----->
+          <div class="tab-pane" id="career">
+            <div class="career_info">
+              <p>Thank you for your interest in working at COSMOS. To apply for an open position,
+                please visit the Careers section of our website.</p>
+              <p>If you are requesting an accommodation for your application, or require further assistance, please
+                continue.</p>
+              <div class="field-btns">
+                <button class="next" id="next-6">NEXT</button>
+              </div>
+            </div>
+  
+            <form action="/career_contact/" class="career-form" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <input type="hidden" name="form_type" value="career">
+              <!-----******************----- Career Conatct Info Section START -----******************----->
+              <div class="career-contact-info">
+                <h5>Your Contact Information</h5>
+                <p>Please let us know who you are, and how we can get back in touch.</p>
+                <input type="text" placeholder="First Name" name="first_name" required/>
+                <input type="text" placeholder="Last Name" name="last_name" required/>
+                <input type="email" placeholder="Email address" name="email" id="c_email" required />
+                <div id="email-error3"></div>
+                <div class="field-btns">
+                  <button class="next" id="next-7">NEXT</button>
+                </div>
+              </div>
+              <!-----******************----- Career Conatct Info Section END -----******************----->
+  
+              <!-----******************----- Career Job Section START -----******************----->
+              <div class="career-job">
+                <h5>YOUR APPLICATION</h5>
+                <p>Tell us about the position that you are interested in, and we will put you in touch with the right
+                  person.</p>
+                <input type="text" placeholder="Job Title" name="job_title" />
+                <select name="job_location" id="job_location" onfocus='this.size=5;' onblur='this.size=1;'
+                  onchange='this.size=1; this.blur();'>
+                  <option value=""> Select an office </option>
+                   {% for office in our_offices %}
+                   {% for o in office.countryname.all %}
+                    <option value="{{o}}">{{o}}</option>
+                  {% endfor %}
+                  {% endfor %}
+                   
+                  
+                </select>
+                <input type="text" placeholder="Link to job post (http://...)" name="link_to_job_post" />
+                <div class="field-btns">
+                  <button class="prev" id="prev-7">Back</button>
+                  <button class="next" id="next-8">NEXT</button>
+                </div>
+              </div>
+              <!-----******************----- Career Job Section END -----******************----->
+  
+              <!-----******************----- Detail Message Section START -----******************----->
+              <div class="career-your_msg">
+                <h5>Enter Your Message</h5>
+                <textarea id="msg" class="c_msg" rows="5" cols="38" name="message" required></textarea>
+                <b id="c_msgError"></b>
+                <input type="file" id="attachment" class="c_file" name="message_file">
+                <div class="field-btns">
+                  <button class="prev" id="prev-8">Back</button>
+                  <button class="submit submit_form" id="c_submit">Submit</button>
+                </div>
+              </div>
+              <!-----******************----- Detail Message Section END -----******************----->
+            </form>
+  
+          </div>
+          <!-----******************----- Career Section END -----******************----->
+  
+          <!-----******************----- Business Inquery Section START -----******************----->
+          <div class="tab-pane" id="b_inquery">
+  
+            <form action="/business_contact/" class="b_inquery-form" method="POST" enctype="multipart/form-data">
+              <!-----******************----- Acadmic Conatct Info Section START -----******************----->
+              {% csrf_token %}
+              <input type="hidden" name="form_type" value="inquery">
+  
+              <div class="inquery-contact-info">
+                <h5>Your Contact Information</h5>
+                <p>Please let us know who you are, and how we can get back in touch.</p>
+                <input type="text" placeholder="First Name" name="first_name" required/>
+                <input type="text" placeholder="Last Name" name="last_name" required/>
+                <input type="text" placeholder="company" name="company" />
+                <input type="email" placeholder="Email address" name="email" id="b_email" required />
+                <div id="email-error4"></div>
+                <div class="field-btns">
+                  <button class="next" id="next-9">NEXT</button>
+                </div>
+              </div>
+              <!-----******************----- Acadmic Conatct Info Section END -----******************----->
+  
+              <!-----******************----- Detail Message Section START -----******************----->
+              <div class="inquery-your_msg">
+                <h5>Enter Your Message</h5>
+                <textarea id="msg" class="b_msg" rows="5" cols="38" name="message" required></textarea>
+                <b id="b_msgError"></b>
+                <input type="file" id="attachment" class="b_file" name="message_file">
+  
+                <div class="sell">
+                  <p>I am looking to sell a product or service.</p>
+                  <input type="radio" id="sell-yes" name="selling_product" value="True" />
+                  <label for="sell-yes">Yes</label>
+                  <input type="radio" id="sell-no" name="selling_product" value="False" />
+                  <label for="sell-no">No</label>
+                </div>
+                <div class="field-btns">
+                  <button class="prev" id="prev-9">Back</button>
+                  <button class="submit submit_form" id="b_submit">Submit</button>
+                </div>
+              </div>
+              <!-----******************----- Detail Message Section END -----******************----->
+            </form>
+  
+          </div>
+          <!-----******************----- Business Inquery Section END -----******************----->
+  
+          <!-----******************----- Other Form Section START -----******************----->
+          <div class="tab-pane" id="other">
+  
+            <form action="/others_contact/" class="other-form" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <input type="hidden" name="form_type" value="other">
+  
+              <!-----******************----- Other Conatct Info Section START -----******************----->
+              <div class="other-contact-info">
+                <h5>Your Contact Information</h5>
+                <p>Please let us know who you are, and how we can get back in touch.</p>
+                <input type="text" placeholder="First Name" name="first_name" required/>
+                <input type="text" placeholder="Last Name" name="last_name" required/>
+                <input type="email" placeholder="Email address" name="email" id="o_email" required />
+                <b id="email-error5"></b>
+                <div class="field-btns">
+                  <button class="next" id="next-10">NEXT</button>
+                </div>
+              </div>
+              <!-----******************----- Other Conatct Info Section END -----******************----->
+  
+              <!-----******************----- Detail Message Section START -----******************----->
+              <div class="other-your_msg">
+                <h5>Enter Your Message</h5>
+                <input type="text" placeholder="Subject" name="subject" required/>
+                <select name="location" id="job_location" onfocus='this.size=5;' onblur='this.size=1;'
+                  onchange='this.size=1; this.blur();'>
+                  <option value="">Select an office </option>
+                  
+                  {% for office in our_offices %}
+                   {% for o in office.countryname.all %}
+                    <option value="{{o}}">{{o}}</option>
+                  {% endfor %}
+                  {% endfor %} 
+
+                </select>
+                <textarea id="msg" class="o_msg" rows="5" cols="38" name="message" required></textarea>
+                <b id="o_msgError"></b>
+                <input type="file" id="attachment" class="o_file" name="message_file">
+                <div class="field-btns">
+                  <button class="prev" id="prev-10">Back</button>
+                  <button class="submit submit_form" id="o_submit">Submit</button>
+                </div>
+              </div>
+              <!-----******************----- Detail Message Section END -----******************----->
+            </form>
+          </div>
+          <!-----******************----- Other Section END -----******************----->
+        </div>
+      </div>
+      <div class="col-2 hidden-lg"></div>
+    </div>
+  </div>
+  {% endblock body %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+{% load crispy_forms_tags %}
+
+<div class="container news-page" style="max-width: 1250px;">
+    <div class="row">
+      <div class="col-12 Project-page-heading">
+        <h1>News</h1>
+        <form action="" method="get">
+          <div class="Project-Page-select-category">  
+              {{ newfilter.form|crispy }}
+      
+              <button class="btn btn-primary" type="submit">Search</button>
+           </div></form>  
+           
+  {% if newfilter and AllNews %}
+    {% for news in AllNews %}
+    <a href="/viewnews/{{news.title}}">
+  
+      <div class="Product-Page-Banner-Image" style="background-image: url(/media/{{news.parent_image}}">
+        <div class="Product-Page-Banner-Heading">
+          <h5 class="news_type">
+            
+            {% for n in news.newsname.all %}{{ n }} , {% endfor %}
+            
+          </h5>
+          <h2>{{news.title}}</h2>
+          <h5>
+          {% for n in news.countryname.all %}
+          {{n}},
+          {% endfor %}
+        </h5>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+    {% endif %}
+  </div>
+  
+  
+{% endblock body %}

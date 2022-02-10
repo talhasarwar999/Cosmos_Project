@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+
+<div class="container mt-5 mb-5" style="max-width: 1250px;">
+    <div class="Career-Page-Banner-Image" style="
+          background-image: url(/media/home/images/capture2.png);">
+      <div class="Career-inner-Page-Banner-Heading">
+        <h1>Jobs</h1>
+      </div>
+    </div>
+    <form action="/career/jobs/" method="GET">
+        <div class="row mt-5">
+          <div class="col-md-1"></div>
+          <div class="col-md-10 Career-Page-Search">
+            <h3>Search for open position and apply</h3>
+            <div class="mt-md-5 mt-3 job-search">
+                <div id="search-box">
+                  <input type="text" placeholder="Job" class="job" name="job" value="" />
+                    <input type="text" placeholder="Country" name="country" value="" />
+                </div>  
+      
+              <div class="search-btn">
+                <button type="submit">Search</button>
+       
+                <a href="/career/jobs/"><button>View All</button></a>
+              </div>
+            </div>
+          </div>
+        </form>
+  </div>
+  {% for job in showjob %}
+  <div class="row g-0 mt-md-5 mt-4 bg-dark text-white" style="height: 80px;line-height: 80px;padding: 5px;">
+    <div class="col-md-9 col-6 job-main-title">
+      <h1>{{job.job_title}}</h1>
+      <!-- <h5></h5> -->
+    </div>
+    <div class="col-md-3 col-6  job-details">
+      <h6></h6>
+      <h6>Job Category : <span> {{job.job_category}}</span></h6>
+      <h6>Business Line : <span> {{job.business_line}} </span></h6>
+    </div></div>
+  
+  <div class="row g-0">
+    <div class="col-md-12 job-description">
+      <div>
+        <h3>Required Skills</h3>
+        {% if job.requirements %}
+        <h6><p>{{job.requirements|safe}}</p></h6>
+        {% endif %}
+        {% if job.responsibiltie %}
+        <h6><p>{{job.responsibiltie|safe}}</p></h6>
+        {% endif %} 
+      </div>
+      <div>
+
+        <h3>Job Category : <span>{{job.job_category}}</span></h3>
+        <h3>Country : <span>{{job.country}}</span></h3>
+        <h3>Position Status : <span>{{job.position_status}}</span></h3>
+        <h3>requisition_vacancy_no <span>1</span></h3>
+      </div>
+    </div>
+  </div>
+
+<button type="button" data-backdrop="static" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Apply Now
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 ">
+              <div class="job_form">
+                
+                <div>
+                  <h2>Contact Details</h2>
+        
+                  <!-- Form START -->
+                  <form method="POST" action="/jobapply/">
+                      {% csrf_token %}
+                    <div class="data">
+                      <label for="">First Name</label>
+                      <input type="text" name="first_name" maxlength="1000" required class="form-control">
+                      <input type="hidden" value="{{job.job_title}}" name="job_name">
+                    </div>
+                    <div class="data">
+                      <label for="">Last Name</label>
+                      <input type="text" name="last_name" maxlength="1000" required class="form-control">
+                      <input type="hidden" value="{{job.job_category}}" name="job_cat">
+                    </div>
+                    <div class="data">
+                      <label for="">Country</label>
+                      <input type="text" name="country" maxlength="1000" required class="form-control">
+                      <input type="hidden" value="{{job.business_line}}" name="job_bus">
+                    </div>
+                    <div class="data">
+                      <label for="" name='address'>Address</label>
+                      <input type="text" name="address" maxlength="5000" required class="form-control">
+                      
+                    </div>
+                    <div class="data">
+                      <label for="">City</label>
+                      <input type="text" name="city" maxlength="5000" required class="form-control">
+                      
+                    </div>
+                    <div class="data">
+                      <label for="">State/Region/Province</label>
+                      <input type="text" name="state" maxlength="5000" required class="form-control">
+                      
+                    </div>
+                    <div class="data">
+                      <label for="">Phone Number</label>
+                      <input type="number" name="phone_no" required class="form-control">
+                      <div id="phone-error"></div>
+                       
+                      </div>
+                      <div class="data">
+                        <label for="">Email</label>
+                        <input type="email" name="email" maxlength="254" required class="form-control">
+                        <div id="email-error"></div>
+                        
+        
+                      </div>
+                      <div class="education_ex">
+                        <h2>Education History </h2><p style="color:green;font-size: 25px;">*Optional</p>
+                        <a id="buttons" class="btn btn-primary">Add</a>
+                        <div id="hides">
+                        
+                        <div id="ed_form">
+                          <div class="data">
+                            <label for="">School/Educational institution</label>
+                            <input type="text" name="institution" maxlength="1000" class="form-control">
+                          </div>
+                          <div class="data">
+                            <label for="">Graduation year</label>
+                            <input type="date" name='year' id="g_year" / class="form-control">
+        
+                          </div>
+                          <div class="data">
+                            <label for="">Major area of study</label>
+                            <input type="text" name="area_of_study" maxlength="1000" class="form-control">
+                          </div>
+                          <div class="data">
+                            <label for="">Degree</label>
+                            <input type="text" name="degree" maxlength="1000" class="form-control">
+                          </div>
+                          </div></div>
+                        </div>
+                      </div>
+                      <h2>Work Expirence</h2><p style="color:green;font-size: 25px;">*Optional</p>
+                      <a id="button" class="btn btn-primary">Add</a>
+                      <div id="hide">
+                                  <!-- Work Expirence Form START -->
+                                  <div class="expirence_de">
+                                    <div id="exp_form">
+                                      <div class="data">
+                                        <label for="">Company</label>
+                                        <input type="text" name="company" maxlength="1000" class="form-control">
+                                      </div>
+                                      <div class="data">
+                                        <label for="">Job title</label>
+                                        <input type="text" name="job_title" maxlength="1000" class="form-control">
+                                      </div>
+                                      <div class="data year">
+                                        <label for="">Start year</label>
+                                        <input type="date" name='start_year' class="form-control">
+                                        <label for="">End year</label>
+                                        <input type="date" name='end_year'  class="form-control">
+                                      </div>
+                                      <div class="data">
+                                        <label for="">Responsibilities</label>
+                                        <textarea name="Responsibilities" id="res" cols="30" rows="10" class="form-control"></textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+                      </div>
+                      <div class="submit_btn text-right">
+                        <input type="Submit" class="btn btn-success mt-3">
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <style>
+          #hide{display: none;}
+          #hides{display: none;}
+          </style>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+          $(document).ready(function(){
+            $("#button").click(function(){
+              $("#hide").show();
+            });
+          
+          });
+          $(document).ready(function(){
+            $("#buttons").click(function(){
+              $("#hides").show();
+            });
+          
+          });
+          </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endfor %} 
+  {% endblock body%}

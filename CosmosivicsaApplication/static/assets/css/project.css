@@ -1,0 +1,556 @@
+/*********************************** Font Family Hurme  ************************************/
+@font-face {
+    font-family: Hurme;
+    src: url("../font/HurmeGeometricSans1.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hurme-bold;
+    font-weight: bold;
+    src: url("assets/font");
+    src: url("../font/HurmeGeometricSans1 Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hurme-semi-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 SemiBold.otf") format("opentype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Hurme";
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/***************************************************************************************************************************************
+****************************************************************************************************************************************
+
+                                                       Our Project Single Page START                                           
+
+****************************************************************************************************************************************
+*****************************************************************************************************************************************/
+
+/********************* Heading of Project Page Start *************************/
+.video-full {
+    height: 500px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-full video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Project-page-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.Project-page-heading h1 {
+    font-family: "Hurme-bold";
+    color: black;
+    font-size: 50px;
+    line-height: 72.8px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/********************* Heading of Project Page End *************************/
+
+
+/********************* Select of Project Page Start *************************/
+
+ul.dropdown-menu.scrollable-menu.show {
+    transform: translate(-44px, 35px) !important;
+}
+
+.Project-Page-select-category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.Project-Page-select-category span {
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.Project-Page-select-category ul {
+    padding: 10px;
+}
+
+.Project-Page-select-category .dropdown-item {
+    padding: 5px;
+    border-bottom: 1px solid #e4e1e1;
+}
+
+/************ Select  ScrollBar CSS ******************/
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.scrollable-menu::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollable-menu::-webkit-scrollbar-track {
+    background: gray;
+    border-radius: 10px;
+}
+
+.scrollable-menu::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.Project-Page-select-category .dropdown-item.active,
+.dropdown-item:active {
+    color: unset;
+    text-decoration: none;
+    background-color: unset;
+}
+
+/********************* Select of Project Page End *************************/
+
+
+
+/********************* Image of Project Page Start *************************/
+
+#project_video .video-full {
+    margin-top: 80px;
+}
+
+
+#news_banner {
+    margin-top: 80px;
+}
+
+.Product-Page-Banner-Image {
+    /* margin-top: 58px !important; */
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    color: white;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom: 10px;
+}
+
+.Product-Page-Banner-Heading {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.Product-Page-Banner-Heading h2 {
+    background: #00000047;
+    padding: 2px 5px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.Product-Page-Banner-Heading h5 {
+    font-size: 20px;
+    background: #00000047;
+    padding: 2px 5px;
+}
+
+/********************* Image of Project Page Start *************************/
+/***************************************************************************************************************************************
+****************************************************************************************************************************************
+
+                                                       Our Project Single Page END                                           
+
+****************************************************************************************************************************************
+*****************************************************************************************************************************************/
+/********************** Our Project Header Bg Image Section START **********************/
+
+.header-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+/********************** Our Project Header Bg Image Section END **********************/
+
+/********************** Our Project About Us Section START **********************/
+#filter label {
+    font-size: 18px;
+}
+
+.shortenedSelect {
+    max-width: 160px;
+}
+
+select.shortenedSelect::-webkit-scrollbar {
+    width: 10px;
+}
+
+select.shortenedSelect::-webkit-scrollbar-track {
+    border: rgb(180, 180, 180);
+    background-color: #ecebeb;
+}
+
+select.shortenedSelect::-webkit-scrollbar-thumb {
+    /* background-color: #1a1e21; */
+    background-color: #5e5d5d;
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 10px;
+}
+
+#filter select {
+    font-size: 15px;
+    width: 160px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #1a1e21;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 3px 5px;
+
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%231a1e21'><polygon points='20,0 80,0 50,40'/></svg>") no-repeat;
+    background-size: 16px;
+    background-position: calc(100% - 10px) 13px;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+#filter select option {
+    font-size: 14px;
+    /* width: 160px; */
+    overflow: hidden;
+}
+
+div#filter input#reset,
+div#filter button#search {
+    box-shadow: none !important;
+    border: 1px solid black;
+}
+
+div#filter input#reset:hover,
+div#filter button#search:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+input#reset {
+    display: none;
+}
+
+#reset {
+    display: none;
+    margin-right: 10px;
+}
+
+.filter_search_btn {
+    display: flex;
+}
+
+.project-about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div#news_about {
+    padding-bottom: 0px !important;
+}
+
+.address h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Hurme-semi-bold;
+}
+
+.address p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.social-share-1 {
+    padding-top: 40px;
+
+}
+
+#social-share-2 {
+    padding-bottom: 0px !important;
+}
+
+.social-share-1 img {
+    width: 35px;
+}
+
+.social-share-1 span {
+    padding-right: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.news-social {
+    margin-top: -25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-info ul {
+    padding-left: 0px;
+}
+
+.contact-info ul li {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-info ul li h4 {
+    padding-right: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 85px;
+}
+
+.contact-info ul li p {
+    font-size: 15px;
+    margin-top: -1px;
+}
+
+div#map {
+    filter: saturate(0);
+}
+
+.project-header {
+    margin-top: 80px;
+}
+
+.project-header img {
+    object-position: center bottom;
+}
+
+img.header-img.w-100 {
+    object-fit: cover;
+    height: 500px;
+}
+
+/********************** Our Project About Us Section END **********************/
+
+/********************** Our Project Under Construction Section START **********************/
+.our-sale {
+    /* background: #9a9a9a; */
+    background: #151414b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-sale p {
+    padding: 25px;
+    font-size: 27px;
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 415px;
+    margin-bottom: -6px !important;
+    filter: saturate(0);
+}
+
+.Under-construction {
+    padding: 20px 20px 20px 0px;
+    /* background: #9a9a9a; */
+    background: #151414b0;
+    color: #fff;
+    min-height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Under-construction ul {
+    padding-left: 13px;
+    margin-bottom: 0px !important;
+}
+
+.Under-construction ul li {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Under-construction ul li h4 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 75px 10px 18px;
+    width: 140px;
+}
+
+.Under-construction ul li p {
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.recent-projects {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.project-details {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+}
+
+.project-details2 {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+.recent-projects h3 {
+    /* font-size: 25px; */
+    font-size: 18px;
+    font-family: 'Hurme-semi-bold';
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.recent-projects p {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.recent-projects img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    /* object-position: center; */
+    object-position: bottom;
+}
+
+.container.gallery {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.gallery .col-md-4 {
+    display: none;
+}
+
+.gallery .btns {
+    width: 120px;
+    margin-left: auto;
+    margin-right: -25px;
+}
+
+.gallery .btn {
+    float: right;
+    /* border: 1px solid black; */
+    margin-bottom: 15px;
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Gallery */
+.gallery h4 {
+    width: 80%;
+    text-align: center;
+    /* font-size: 24px; */
+    font-size: 18px;
+    font-family: 'Hurme-semi-bold';
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+/******************************************************************************************************/
+/****************************************                     *****************************************/
+/**************************************** News Page CSS Start *****************************************/
+/****************************************                     *****************************************/
+/******************************************************************************************************/
+.news-page .Product-Page-Banner-Image {
+    margin-top: 0px !important;
+}
+
+#project-page .Product-Page-Banner-Image {
+    margin-top: 0px !important;
+}
+
+
+
+/******************************************* Footer Fix in Bottom  ************************************/
+
+div#all_projects {
+    min-height: calc(100vh - 75px - 95px);
+}
+
+.container.news-page {
+    min-height: calc(100vh - 75px - 95px);
+}
+
+.container.news-page p.text-center,
+#all_projects p.text-center {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.filter_search_btn .icons {
+    display: none;
+}
+
+.icons button {
+    border: unset;
+    background: unset;
+    outline: unset;
+}
+
+/******************************************************************************************************/
+/*****************************************                   ******************************************/
+/***************************************** News Page CSS END ******************************************/
+/*****************************************                   ******************************************/
+/******************************************************************************************************/

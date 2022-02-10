@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+{% for message in messages  %}   
+         
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert" style="margin-top: 70px;">
+  <strong>Message : </strong> {{ message }}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endfor %}
+<div class="container mt-5 mb-5 career_page" style="max-width: 1250px;">
+  
+    <div class="Career-Page-Banner-Image" style="
+          background-image: url(/media/home/images/capture2.png);
+        ">
+      <div class="Career-Page-Banner-Heading">
+        <h1>Careers</h1>
+      </div>
+    </div>
+  
+    <div class="mt-5">
+      <h6>
+        <p>Day by day we live new challenges in our lives, and one of the biggest challenges that we all face without exception in life is when we are about to look for work. To do this, high doses of will, perseverance and effort are needed in the face of such a dynamic world in which uncertainty is more present than ever. Make a difference and start your career at COSMOSIVICSA.</p>
+      </h6>
+    </div>
+    <form action="/career/jobs/" method="GET">
+  
+    <div class="row mt-5">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 Career-Page-Search">
+        <h3>Search for open position and apply</h3>
+        <div class="mt-md-5 mt-3 job-search">
+            <div id="search-box">
+              <input type="text" placeholder="Job" class="job" name="job" value="" />
+
+                <input type="text" placeholder="Country" name="country" value="" />
+            </div>
+  
+          <div class="search-btn">
+            <button type="submit">Search</button>
+            <a><button id="clear">View All</button></a>
+           
+          </div>
+        </div>
+      </div>
+    </form>
+  
+      <div class="col-md-1"></div>
+    </div>
+  
+    <div class="mt-5">
+      <img class="Career-Page-Banner-Image" src="/media/home/images/COSMOSIVICSA_CAREERS_04.jpeg" alt="" />
+    </div>
+  
+    <div class="mt-5">
+      <h6>
+        <p>Do not lose your focus and seek that which you are sure will make you happy. It is the same as we do with our clients, we meet their objectives in many different ways. We form creative, interdisciplinary teams that function as small dynamic studios, with all the resources and diversity of a global firm. At COSMOSIVICSA he will collaborate with industry experts in some of the services we offer: Architecture &amp; Design, Engineering Studies, Construction Management, Environmental Services and Program, Advisory &amp; Project Management.</p>
+  
+  <p>It is very important that on this path, you build a support network that encourages you every day to achieve your work goal. That is why we encourage our people to deepen their understanding by working in new places and different cultures. Wherever we are in the world, our shared goals and values ​​keep us grounded in what really matters.</p>
+      </h6>
+    </div>
+  </div>
+  
+  {% endblock body %}  

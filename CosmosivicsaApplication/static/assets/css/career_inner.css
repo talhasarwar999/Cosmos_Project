@@ -1,0 +1,102 @@
+/*********************************** Font Family Hurme  ************************************/
+@font-face {
+    font-family: Hurme;
+    src: url("../font/HurmeGeometricSans1.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hurme-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hurme-semi-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 SemiBold.otf") format("opentype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Hurme";
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/********************* Banner Image and Heading of Career-inner Page Start *************************/
+
+.Career-inner-Page-Banner-Image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+}
+
+.Career-inner-Page-Banner-Heading {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.Career-inner-Page-Banner-Heading h1 {
+    background: #00000047;
+    padding: 2px 5px;
+}
+
+
+
+/********************* Banner Image and Heading of Career-inner Page End *************************/
+
+/**************************** Jobs CSS Start ***********************************************/
+.jobs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-top: 1px solid darkgray; */
+    border-bottom: 1px solid darkgray;
+}
+
+/* #first-job-section{
+    border-top: 1px solid darkgray;
+} */
+.jobs-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobs-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Hurme-semi-bold;
+}
+
+.jobs-section h6 {
+    font-size: 16px;
+}
+
+.jobs-section span {
+    font-weight: 900;
+    color: black;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+.jobs-section i {
+    font-size: 25px;
+}
+
+/**************************** Jobs CSS End ***********************************************/

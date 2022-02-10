@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    {% load crispy_forms_tags %}
+    {% load customtag %}
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/assets/img/favicon-32x32.png" type="image/gif">
+		<title>{% block title %}   {% endblock title %}</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/static/assets/css/lightbox.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="/static/assets/css/index.css" />
+        <link rel="stylesheet" href="/static/assets/css/custom.css" />
+        <link rel="stylesheet" href="/static/assets/css/media_query.css" />
+        <link rel="stylesheet" href="/static/assets/css/values.css" />
+        <link rel="stylesheet" href="/static/assets/css/project.css" />
+        <link rel="stylesheet" href="/static/assets/css/our-firm.css" />
+        <link rel="stylesheet" href="/static/assets/css/contact.css" />
+        <link rel="stylesheet" href="/static/assets/css/careers.css" />
+
+<style>
+  body{
+    font-family: sans-serif;
+  }
+</style>
+
+    </head>
+	<body style="font-family: sans-serif;">
+        <div  id="home"  >
+            <!-----******************----- Navbar Header Section START -----******************----->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+              <div class="container">
+                <a class="navbar-brand" href="/" id='home-logo'>
+                  <img src="/media/home/images/CSM_LOGO-BLACK-1_Sln5mgX.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                        EXPERTISE
+                        <i class="fal fa-chevron-down"></i>
+                      </a>
+        
+                      <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                        <div class="row">
+        
+                          <div class="col-md-6">
+                            <a href="/service/">
+                              <h4>Services</h4>
+                            </a>
+                            {% for ser in service %}
+                            <a href="/viewservice/{{ser.servicename}}" class="mt-3">
+                              <p>{{ser.servicename}}</p>
+                            </a>
+                            {% endfor %}
+                            
+                            <a href="/service/" class="button">
+                              view all Services >
+                            </a>
+                          </div>
+                          <div class="col-md-6">
+                            <a href="/market/">
+                              <h4>Markets</h4>
+                            </a>
+                            {% for mar in market %}
+                            <a href="/viewmarkets/{{mar.marketname}}" class="mt-3">
+                              <p>{{mar.marketname}}</p>
+                            </a>
+                            {% endfor %}
+                            <a href="/market/" class="button">
+                              view all markets >
+                            </a>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/projects/?market=&service=&country=">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="/firm/" id="navbarDropdown" role="button" aria-expanded="false">
+                        Our Firm
+                        <i class="fal fa-chevron-down"></i>
+                      </a>
+                      <ul class="dropdown-menu mega-menu2" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <ul>
+                              <li><a href="#HOW WE WORK">Mission + Vision</a></li>
+                              <li><a href="#GOVERNANCE">Governance</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6">
+                            <ul>
+                              <li><a href="#OUR REACH">Our Brands</a></li>
+                              <li><a href="/firm/#our-team">Our team</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="/values/" id="navbarDropdown" role="button" aria-expanded="false">
+                        Our Values
+                        <i class="fal fa-chevron-down"></i>
+                      </a>
+                      <ul class="dropdown-menu mega-menu3" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <ul>
+                              <li><a href="#SUSTAINABLE LEGACIES">Sustainable legacies</a></li>
+                              <li><a href="#OUR ETHICAL COMMITMENT">Ethics and Compliances</a></li>
+                              <li><a href="#DIGITAL INNOVATION">Innovation + digital</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6">
+                            <ul>
+                              <li><a href="#OUR COMMITMENTS TO STAKEHOLDERS">Our Stakeholders</a></li>
+                              <li><a href="#EQUALITY, DIVERSITY AND INCLUSION">Equity, diversity and Inclusion</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/news/">News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/career/">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+        {% block body %}  {% endblock body %}
+
+        <div class="container-fluid footer_address">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10">
+                  <h2>Our Offices</h2>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="office_address">
+                        <a href="/contact/" target="_blank" rel="noopener noreferrer">
+                          <h6>Colombia - Bogotá</h6>
+                          <h6>Carrera 54 No. 106NB - 22 Interior 101</h6>
+                        </a>
+                      </div>
+                      <div class="office_address">
+                        <a href="/contact/" target="_blank" rel="noopener noreferrer">
+                          <h6>Ecuador - Quito</h6>
+                          <h6>Alemania 30-39 y Eloy Alfaro</h6>
+                        </a>
+                      </div>
+                      <div class="office_address">
+                        <a href="/contact/" target="_blank" rel="noopener noreferrer">
+                          <h6>Spain - Valencia</h6>
+                          <h6>Av. Primado Reig 129, Ent. D – 46020</h6>
+                        </a>
+                      </div>   
+                    </div>
+                    <div class="col-6">  
+                      <div class="office_address">
+                        <a href="/contact/" target="_blank" rel="noopener noreferrer">
+                          <h6>China – Shanghai</h6>
+                          <h6>No.501 Jiujiang Rd.</h6>
+                        </a>
+                      </div>
+                      
+                      <div class="office_address">
+                        <a href="/contact/" target="_blank" rel="noopener noreferrer">
+                          <h6>Colombia - Medellin</h6>
+                          <h6>Calle 17CS #44-177, edificio Mizu oficina 201</h6>
+                        </a>
+                      </div>
+                      
+                      <div class="office_address">
+                        <a href="/contact/" target="_blank" rel="noopener noreferrer">
+                          <h6>Senegal – Dakar</h6>
+                          <h6>Rue LIB 03, ground floor</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-md-2 my_contact">
+                  <div class="contact_us">
+                    <h2>Contact us</h2>
+                    <div class="contact_info">
+                      <div class="phone_no">
+                        <div class="icon">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="number">
+                          <div class="mt-1"><a href="tel:+393472725161">
+                              <span>+393472725161</span></a></div>
+                          <div class="mt-1"><a href="tel:+34610732623">
+                              <span>+34610732623</span></a></div>
+                          <div class="mt-1"><a href="tel:+34691466935">
+                              <span>+34691466935</span></a></div>
+                        </div>
+                      </div>
+                      <div class="email_add">
+                        <a href="mailto:info@cosmosivicsa.com"><i class="fas fa-envelope"></i>
+                          <span>info@cosmosivicsa.com</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="get_social">
+                    <h2>Get Social</h2>
+                    <div class="social_icons">
+                      <a href="https://www.instagram.com/cosmosivicsa/" target="_blank" rel="noopener noreferrer">
+                        <img src="/static/assets/img/insta-white.png" alt="">
+                      </a>
+                      <a href="https://www.facebook.com/cosmosivicsa" target="_blank" rel="noopener noreferrer">
+                        <img src="/static/assets/img/white-facebook.png" alt="">
+                      </a>
+                      <a href="https://www.linkedin.com/company/cosmosivicsa" target="_blank" rel="noopener noreferrer">
+                        <img src="/static/assets/img/indeed-white.png" alt="">
+                      </a>
+                      <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/static/assets/img/twitter-white.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!--********************** Policy Term Section Start ************************  -->
+          <div class="container footer">
+            <div class="row">
+              <div class="col-lg-1 hidden-md"></div>
+              <div class="col-lg-10 col-12">
+                <div class="policy-term">
+                  <div class="social_links1">
+                    <a href="/terms/" target="_blank"> Terms of use </a>
+                    <a href="/privacy_policy/" target="_blank"> Privacy & Cookies Policy </a>
+                  </div>
+                  <a href="" target="_blank"><img class="footer-logo" src="/media/home/images/png.png" /></a>
+                  <div class="social_links2">
+                    <a href="/credits/" target="_blank"> Credits </a>
+                    <a href="/all_rights/" target="_blank"> All Rights Reserved </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1 hidden-md"></div>
+            </div>
+          </div>
+          <!--********************** Policy Term Section End ************************  -->
+        </div>
+      
+        <div class="wrapper">
+          <div class="content">
+            <p>We use cookies on our website to give you the most relevant experience by remembering your preferences and
+              repeat visits. By clicking “Accept All”, you consent to the use of ALL the cookies.</p>
+            <div class="buttons">
+              <button class="item reject">Deny</button>
+              <button class="item accept">Allow</button>
+            </div>
+          </div>
+        </div>
+        <script>
+            // Featured Products
+            $('.featured-products').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 8000,
+                smartSpeed: 800,
+                // animateOut: 'fadeOut',
+                //   animateIn: 'fadeIn',
+                dots: false,
+                navText: [
+                    '<i class="fa fa-angle-left"></i>',
+                    '<i class="fa fa-angle-right"></i>',
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        </script>
+  <script>
+    setTimeout(function () {
+      document.getElementsByClassName("wrapper")[0].style.visibility = "visible";
+    }, 5000);
+  </script>
+  <script>
+    const cookieBox = document.querySelector(".wrapper"),
+      acceptBtn = cookieBox.querySelector("button.accept");
+    rejectBtn = cookieBox.querySelector("button.reject");
+
+    acceptBtn.onclick = () => {
+      //setting cookie for 1 month, after one month it'll be expired automatically
+      document.cookie = "CookieBy=https://cosmosivicsa.com/; max-age=" + 60 * 60 * 24 * 30;
+      if (document.cookie) { //if cookie is set
+        var c = cookieBox.classList.add("hide"); //hide cookie box
+
+      } else { //if cookie not set then alert an error
+        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+      }
+    }
+
+    rejectBtn.onclick = () => {
+      //setting cookie for 1 onehour, after one month it'll be expired automatically
+      document.cookie = "CookieBy=https://cosmosivicsa.com/; max-age=" + 60 * 60;
+      if (document.cookie) { //if cookie is set
+        cookieBox.classList.add("hide"); //hide cookie box
+      } else { //if cookie not set then alert an error
+        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+      }
+    }
+
+    let checkCookie = document.cookie.indexOf("CookieBy=https://cosmosivicsa.com/"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+  </script>
+  <!-- Cookies Script END -->
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: '/getNavbarData/',
+        dataType: 'json',
+        success: function (data) {
+          var markets_data = ''
+          var projects_data = ''
+          var services_data = ''
+          var logo = ''
+          for (let index = 0; index < data['markets'].length; index++) {
+            markets_data +=
+              `<li><a href="/market/${data['markets'][index]['slug']}/">${data['markets'][index]['market_title']}</a></li>`
+          }
+          for (let index = 0; index < data['projects'].length; index++) {
+            projects_data +=
+              `<li><a href="/project/${data['projects'][index]['slug']}/">${data['projects'][index]['project_title']}</a></li>`
+          }
+          for (let index = 0; index < data['services'].length; index++) {
+            services_data +=
+              `<li><a href="/service/${data['services'][index]['slug']}/">${data['services'][index]['service_title']}</a></li>`
+          }
+          var html_logo = `<img src="${data['logo']}" />`
+
+          $('#markets').append(markets_data)
+          $('#services').append(services_data)
+          $('#projects').append(projects_data)
+          $('#home-logo').append('')
+          $('#home-logo').append(html_logo)
+
+          // console.log(html_logo)
+        },
+        error: function (data) {
+          console.log('not okk')
+        }
+      });
+
+    });
+    </script>
+    <script>
+        var title_filter = "None"
+      
+        if (title_filter != "None" && title_filter != "") {
+          $("#title_select").val(title_filter).change();
+        }
+        var year_filter = "None"
+        if (year_filter != "None" && year_filter != "") {
+          $("#year_select").val(year_filter).change();
+        }
+        var els = document.getElementsByClassName("news_type");
+        for (var i = 0; i < els.length; i++) {
+          var ele = els[i].innerHTML
+          var newCharacter = "";
+          var newString = ele.substring(0, ele.lastIndexOf(',')) + newCharacter + ele.substring(ele.lastIndexOf(',') + 1);
+          els[i].innerHTML = newString
+        }
+      
+        $(window).on('load', function () {
+             
+             var type = document.getElementById("title_select").value;
+             var year = document.getElementById("year_select").value;
+             if (type != '' || year != '') {
+                 document.getElementById("reset").style.display = "block";
+             } else {
+                 document.getElementById("reset").style.display = "none";
+             }
+         });
+         
+      </script>
+      <script>
+        var market = ""
+        if (market != "None" && market != "") {
+      
+          $("#market_select").val(market).change();
+        }
+        var service = ""
+        // var service_clean = service.replace(service, '&amp;')
+        if (service != "None" && service != "") {
+          $("#service_select").val(service).change();
+        }
+      
+        var country = ""
+        if (country != "None" && country != "") {
+          $("#country_select").val(country).change();
+        }
+      
+        var els = document.getElementsByClassName("project_type");
+        for (var i = 0; i < els.length; i++) {
+          var ele = els[i].innerHTML
+          var newCharacter = "";
+          var newString = ele.substring(0, ele.lastIndexOf(',')) + newCharacter + ele.substring(ele.lastIndexOf(',') + 1);
+          els[i].innerHTML = newString
+        }
+      </script>
+      <script>
+        document.getElementById("service_select").options[6] = null;
+      </script>
+      
+      <script>
+      
+      $(window).on('load', function () {
+      
+      var market = document.getElementById("market_select").value;
+      var service = document.getElementById("service_select").value;
+      var country = document.getElementById("country_select").value;
+      
+      if (market != '' || service != '' || country != '') {
+          document.getElementById("reset").style.display = "flex";
+      } else {
+          document.getElementById("reset").style.display = "none";
+      }
+      });
+      
+      
+        let topSeHeight = 400;
+        let itemsCount = 5;
+      
+        let items = document.getElementsByClassName('show-more');
+      
+        for (let x = 0; x < 5; x++) {
+          items[x].style.display = "block";
+        }
+      
+        window.onscroll = function () {
+      
+          if (window.pageYOffset > topSeHeight) {
+      
+            topSeHeight = topSeHeight + 400;
+            itemsCount = itemsCount + 2;
+      
+            // let items = document.getElementsByClassName('show-more');
+            for (let index = 5; index < itemsCount; index++) {
+              items[index].style.display = "block";
+            }
+          }
+        }
+      </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ////// Custom Js ///////// -->
+<script src="/static/assets/js/custom.js"></script>
+<!-- ///////// font awesome ///////// -->
+<script src="https://kit.fontawesome.com/23b1f56e60.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </script>        
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </body>
+</html>

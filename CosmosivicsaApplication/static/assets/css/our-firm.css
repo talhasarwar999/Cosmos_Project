@@ -1,0 +1,255 @@
+/*********************************** Font Family Hurme  ************************************/
+@font-face {
+    font-family: Hurme;
+    src: url("../font/HurmeGeometricSans1.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: Hurme-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: Hurme-semi-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 SemiBold.otf") format("opentype");
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Hurme";
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /********************* Image of Project Page Start *************************/
+  
+  .Our-Frim-Page-Banner-Image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    color: white;
+    background-size: cover;
+    margin-top: 60px;
+  }
+  
+  .Our-Frim-Page-Banner-Heading {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .Our-Frim-Page-Para {
+    font-size: 14px;
+  }
+  
+  /********************* Image of Project Page Start *************************/
+  
+  /******************** Our-Frim-Page-Details Start ***************************/
+  #our-firm .video-full {
+    margin-top: 60px;
+  }
+  .Our-Frim-Page-Details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  /* #our-firm h1{
+    font-family: "Hurme-bold";
+      color: black;
+      font-size: 38px;
+      line-height: 72.8px;
+      margin-bottom: 0px;
+      text-align: center;
+      margin-top: 80px;
+  } */
+  #our-firm h1 {
+    color: white;
+    font-size: 40px;
+    margin-top: -100px;
+      margin-bottom: 30px;
+    z-index: 9999999999999999999;
+    background: #00000047;
+    padding: 2px 5px;
+    width: 220px;
+    text-align: center;
+    position: relative;
+    margin-left: 50px;
+    text-transform: capitalize;
+  }
+  .Our-Frim-Page-Details h2 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .Our-Frim-Page-Details h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  /******************** Our-Frim-Page-Details End ***************************/
+  /******************** Our-Frim-Page-sub-heading Start ***************************/
+  
+  .Our-Frim-Page-sub-heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .Our-Frim-Page-sub-heading p {
+    margin-bottom: 0px;
+  }
+  
+  /******************** Our-Frim-Page-sub-heading End ***************************/
+  
+  /************************ Our Team Start ***********************************/
+  .team {
+    padding: 2px;
+    position: relative;
+  }
+  
+  .team img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* border: 1px solid black; */
+  }
+  
+  .team h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1.8px;
+    margin-top: 1px;
+  }
+  
+  .team h6 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  
+  .p-1{
+    display: none;
+  }
+  
+  .team:hover .p-1 {
+    display: block;
+    padding: .25rem!important;
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    width: 98%;
+    color: #fff;
+    text-shadow: 2px 3px 4px #000000;
+    background: #00000047;
+    text-align: center;
+    transition: height 2s;
+  }
+  
+  .social-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:60px;
+    padding-right:60px;
+  }
+  .team p {
+      margin-bottom: 3.5px !important;
+  }
+  .social-btn a{
+    text-decoration: none !important;
+    width: 45%;
+    color: #fff;
+    font-size: 25px;
+    margin: auto;
+  }
+  .social-btn a i{
+    font-size: 24px;
+  }
+  /************************ Our Team End ***********************************/
+  
+  
+  
+  
+  /******************************** Media Query Of Our Frim Page START For Ipad  IOS Devices ****************/
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .team img {
+      height: 150px;
+    }
+  
+    .team h5 {
+      font-size: 11px;
+    }
+  
+    .team h6 {
+      font-size: 10px;
+    }
+  
+    .team p {
+      font-size: 9px;
+      margin-bottom: 8px;
+    }
+  }
+  
+  /******************************** Media Query Of Our Frim Page START For Ipad  IOS Devices **************/
+  
+  /******************************* Media Query Of Our Frim Page START For Mobile Devices *********************/
+  @media screen and (max-width: 767px) {
+    .Our-Frim-Page-Banner-Image {
+      height: 250px;
+    }
+  
+    .Our-Frim-Page-Banner-Heading {
+      height: 250px;
+      padding-left: 15px;
+      padding-bottom: 15px;
+    }
+  
+    .Our-Frim-Page-Banner-Heading h1 {
+      font-size: 16px;
+    }
+  
+    .Our-Frim-Page-Details h2 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  
+    .Our-Frim-Page-Details h3 {
+      font-size: 10px;
+      font-weight: 600;
+    }
+  
+    .Our-Frim-Page-sub-heading {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .team img {
+      height: 150px;
+    }
+  
+    .team h5 {
+      font-size: 12px;
+    }
+  
+    .team h6 {
+      font-size: 11px;
+    }
+  
+    .team p {
+      font-size: 9px;
+      margin-bottom: 8px;
+    }
+  }

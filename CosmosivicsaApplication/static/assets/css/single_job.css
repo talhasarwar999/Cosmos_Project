@@ -1,0 +1,417 @@
+/*********************************** Font Family Hurme  ************************************/
+@font-face {
+    font-family: Hurme;
+    src: url("../font/HurmeGeometricSans1.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hurme-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hurme-semi-bold;
+    font-weight: bold;
+    src: url("../font/HurmeGeometricSans1 SemiBold.otf") format("opentype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Hurme";
+    outline: 0px !important;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/********************* Job Main-title and Details of Single Job Page Start *************************/
+
+.job-main-title {
+    padding: 25px;
+    background-color: black;
+    color: white;
+}
+
+.job-main-title h1 {
+    font-family: 'Hurme';
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.job-main-title h5 {
+    font-family: 'Hurme';
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.job-details {
+    padding: 25px;
+    background-color: rgba(24, 23, 23, 0.658);
+    color: white;
+}
+
+.job-details h6 {
+    font-size: 15px;
+}
+
+/********************* Job Main-title and Details of Single Job Page End *************************/
+
+/**************************** job-description CSS Start ***********************************************/
+
+
+.job-description h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Hurme-semi-bold;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.job-description h6 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/**************************** job-description CSS End ***********************************************/
+
+/*************************** Apply Button CSS Start *************************************************/
+
+.apply-button {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.apply-button button {
+    padding: 12px;
+    border: unset;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+.apply-button button:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+/*************************** Apply Button CSS End *************************************************/
+
+
+/* Apply Now Form */
+.job_form{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 8%);
+    background: #fff;
+    width: 500px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    padding: 30px;
+}
+.job_form .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.job_form form .data{
+    height: 40px;
+    width: 100%;
+    margin: 40px 0;
+}
+.job_form form .data label{
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.job_form form .data input, select,textarea {
+    height: 100%;
+    width: 100%;
+    padding: 2px 10px;
+    font-size: 14px;
+    border: 1px solid lightgrey;
+}
+.error {
+  /* content: 'field'; */
+  content: "*";
+  color: red;
+  font-size: 14px;
+}
+.data.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: -32px !important;
+}
+
+.data.checkbox input {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid lightgrey;
+}
+.data.checkbox label {
+    padding-left: 15px;
+}
+
+button#ed_history, button#edu_cancel,
+button#exp_history, button#exp_cancel{
+    background: unset;
+    border: unset;
+    font-size: 18px;
+    font-weight: 600;
+}
+button#edu_done,button#exp_done  {
+    width: 90px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+#exp_form, #ed_form, .job_form{
+    display: none;
+}
+.education_ex .text2, .expirence_de .text4{
+    display: none;
+}
+
+.expirence_de{
+    margin-top: 20px;
+}
+.data.year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data.year input {
+    width: 30% !important;
+}
+.data.exp_checkbox {
+    display: flex;
+    align-items: center;
+    height: 0px !important;
+    margin: 10px 0px !important;
+}
+.data.exp_checkbox input
+{
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid lightgrey;
+}
+.data.exp_checkbox label{
+    padding-left: 15px;
+}
+
+.submit_btn{
+    display: flex;
+    justify-content: center;
+}
+.submit_form{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 20px 0px;
+}
+.submit_form:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+div#email-error, div#email-error2,#phone-error,
+ div#email-error3, div#email-error4,  b#email-error5, b#o_msgError, b#ac_msgError, b#c_msgError, b#b_msgError, b#p_msgError {
+  font-size: 14px;
+  float: right;
+  color: red;
+}
+
+
+
+/* Alert msg */
+.alert{
+    /* background: #ffdb9b; */
+    background: #89deb7;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    /* border-left: 8px solid #ffa502; */
+    border-left: 8px solid #1f8c5a;
+    overflow: hidden;
+    opacity: 0;
+    /* display: none; */
+  }
+  .alert.showAlert{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .alert.show{
+    animation: show_slide 1s ease forwards;
+  }
+  @keyframes show_slide {
+    0%{
+      transform: translateX(100%);
+    }
+    40%{
+      transform: translateX(-10%);
+    }
+    80%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-10px);
+    }
+  }
+  .alert.hide{
+    animation: hide_slide 1s ease forwards;
+  }
+  @keyframes hide_slide {
+    0%{
+      transform: translateX(-10px);
+    }
+    40%{
+      transform: translateX(0%);
+    }
+    80%{
+      transform: translateX(-10%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+  .alert .fa-check-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* color: #ce8500; */
+    color: #1f8c5a;
+    font-size: 30px;
+  }
+  .alert .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    /* color: #ce8500; */
+    color: #1f8c5a;
+  }
+  .alert .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: #ffd080; */
+    background: #89deb7;
+    padding: 20px 18px;
+    cursor: pointer;
+  }
+  .alert .close-btn:hover{
+    /* background: #ffc766; */
+    background: #89deb7;
+  }
+  .alert .close-btn .fas{
+    /* color: #ce8500; */
+    color: #1f8c5a;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+
+
+  /* Alert msg */
+.alert2{
+  background: #ffdb9b;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  border-left: 8px solid #ffa502;
+  overflow: hidden;
+  opacity: 0;
+  /* display: none; */
+}
+.alert2.showAlert{
+  opacity: 1;
+  pointer-events: auto;
+}
+.alert2.show{
+  animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+  0%{
+    transform: translateX(100%);
+  }
+  40%{
+    transform: translateX(-10%);
+  }
+  80%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
+}
+.alert2.hide{
+  animation: hide_slide 1s ease forwards;
+}
+@keyframes hide_slide {
+  0%{
+    transform: translateX(-10px);
+  }
+  40%{
+    transform: translateX(0%);
+  }
+  80%{
+    transform: translateX(-10%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+.alert2 .fa-check-circle{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ce8500;
+  font-size: 30px;
+}
+.alert2 .msg{
+  padding: 0 20px;
+  font-size: 18px;
+  color: #ce8500;
+}
+.alert2 .close-btn{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffd080;
+  padding: 20px 18px;
+  cursor: pointer;
+}
+.alert2 .close-btn:hover{
+  background: #ffc766;
+}
+.alert2 .close-btn .fas{
+  color: #ce8500;
+}

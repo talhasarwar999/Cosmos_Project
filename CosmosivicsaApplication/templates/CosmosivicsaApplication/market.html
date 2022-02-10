@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+
+<div class="main-container">
+    <div class="container" style="max-width: 1250px;">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h1>MARKETS</h1>
+          <p>
+            <p>COSMOSIVICSA partners with clients to take on their most complex challenges and pioneer innovative solutions that make a positive, lasting impact.<br />
+Across the globe, our teams push the limits of what&rsquo;s possible and build legacies for generations to come &ndash; the second longest bridge in South America, record-breaking sports events as the Olympic Games, the largest east African development mega project, life-sustaining disaster recovery programs, and the most challenging sustainable solutions for a better future.<br />
+&nbsp;</p>
+          </p>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container" style="max-width: 1250px;">
+        <div class="row Related-News">
+          {% for mar in market %}
+            <div class="col-md-4 g-2">
+              <a href="/viewmarkets/{{mar.marketname}}">
+                <div class="blog">
+                  <img src="/media/{{mar.market_images}}" alt="" />
+                  <h5>{{mar.marketname}}</h5>
+                </div>
+              </a> 
+            </div>
+            {% endfor %}
+          </div>
+          </div>
+  
+
+</div>
+{% endblock body%}

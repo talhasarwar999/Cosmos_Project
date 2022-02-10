@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block title %} COSMOSIVICSA: Architecture, Engineering and Consulting {% endblock title %}
+{% block body %}
+
+<div class="container" style="max-width: 1250px;" >
+    <div class="row g-0">
+      <div class="col-12 " id="our-firm">
+ 
+              {% for firm in our_firm %}
+        <div class="col-12 video-full">
+          <video width="100%" autoplay="true" loop="true" muted="muted" playsinline>
+            <source src="/media/{{firm.video}}" type="video/mp4">
+          </video>
+        </div>
+      <h1>{{firm.name}} </h1>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" id="values" style="max-width: 1250px;">
+   <div class="recent-projects">
+    <div class="row">
+      
+      <div class="col-12 " id="our-firm">
+        <div class="text-details">
+          <p>We are an collective force of global architects, engineers and consultants designing sustainable solutions to positively impact the future of the places we inhabit.<br />
+&nbsp;</p>
+          </div> 
+      </div>
+    </div>
+    <div class="row g-0">
+      {% for frm in firm.firm.all %}
+    {% if frm.id|divisibleby:2 %}
+      <div class="col-md-6">
+        <a href="/media/{{frm.image}}" data-lightbox="img">
+            <img src="/media/{{frm.image}}">
+          </a>
+  </div>
+      <div class="col-md-6 project-details" id={{frm.title}} style="padding-right: 0px !important; padding-left: 70px;" >
+        <h3>{{frm.title}}</h3>
+        <div class="img-text">
+            <p>{{frm.paragraph|safe}}</p>
+        </div> 
+      </div>
+    
+    {% else %}
+   
+      
+      <div class="col-md-6 project-details" id={{frm.title}}>
+        <h3>{{frm.title}}</h3>
+        <div class="img-text">
+            <p>{{frm.paragraph|safe}}</p>
+        </div> 
+      </div>
+
+      <div class="col-md-6">
+        <a href="/media/{{frm.image}}" data-lightbox="img">
+            <img src="/media/{{frm.image}}">
+          </a>
+  </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+    <!--*******-- recent-projects3 END --*******-->
+  </div>
+   <!-------**********************------- Our Project Details Section END -------**********************------->
+    <div class="row">
+
+      <!--******--- Our Team Section START ----******-->
+      <div class="col-12" id="our-team">
+        <h1>A COLLECTIVE NETWORK OF EXPERTS </h1>
+       <div>
+          <p>We create cities, connect places, devise efficient buildings and plan an effective management of the natural resources using the most innovative techniques through a qualified interdisciplinary and multicultural team:</p>
+       </div>      <div class="row Our-Team">
+          <h1>Our Executive</h1>
+        {% for img in firm.firm_images.all %}
+
+          <div class="col-md-2 col-4 team">
+            <img src="/media/{{img.image}}" alt="" />
+            <div class="p-1">
+              <h5>{{img.name}}</h5>
+              <h6>{{img.work}}</h6>
+              <h6>{{img.about}}</h6>
+              <div class="social-btn">
+                  
+                      <a href="https://www.linkedin.com/authwall?trk=gf&amp;trkInfo=AQFF7-9Umhp9kQAAAXwl117gOL--abOM9rXcQQc0aDPJFUxMA8SjtGmr7-IBe03pvA6d1RtDyEjmUmdeCU4nGC0es0mvYN2nAqDGYfPJdWxVUx3QPC0mrZCBaGzebSITxNYkBIA=&amp;originalReferer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falex-serrano-craggs-13b223107%2F" style="text-decoration: none !important;" target="_blank"><i
+                              class="fab fa-linkedin"></i></a>
+                  
+                  
+                      <a href="mailto:alejandro.serrano@cosmosivicsa.com" style="text-decoration: none !important;"><i
+                              class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endblock body %}

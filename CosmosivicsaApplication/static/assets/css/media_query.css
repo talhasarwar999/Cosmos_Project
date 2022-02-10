@@ -1,0 +1,2329 @@
+/******************************** START For Mini Laptop ********************************/
+
+@media screen and (max-width: 1400px) and (min-width:1025px) {
+
+
+    /*=============== Navbar Start For Mini Laptop ===============*/
+    .navbar-expand-lg .navbar-nav li.nav-item {
+        padding: 22px 15px;
+        align-items: center;
+        display: flex;
+    }
+
+    .mega-menu .row .button,
+    .mega-menu2 .row .button {
+        font-size: 13px;
+        width: 65%;
+    }
+
+    /*=============== Navbar END For Mini Laptop ===============*/
+
+    /*=============== Slider START For Mini Laptop ===============*/
+
+    #slider3 .carousel-control-next,
+    #slider3 .carousel-control-prev {
+        height: 112vh;
+    }
+
+    .carousel-item {
+        height: unset;
+        min-height: unset;
+    }
+
+    .carousel-item img {
+        height: 650px;
+    }
+
+    .carousel-caption {
+        bottom: 31%;
+    }
+
+    #about-us .carousel-item img {
+        height: 220px !important;
+        min-height: 220px;
+    }
+
+    .l_news h1 {
+        margin-bottom: -15px;
+        margin-top: 35px;
+    }
+
+    /*=============== Slider END For Mini Laptop ===============*/
+
+    /*=============== Project Single Page START For Mini Laptop ===============*/
+    .social-share-1 {
+        padding-top: 57px;
+    }
+
+    .our-sale p {
+        padding: 25px;
+        font-size: 30px;
+    }
+
+    .Under-construction {
+        padding: 5px 5px 5px 0px;
+    }
+
+    .Project-page-heading h1 {
+        font-size: 38px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .main-container h1 {
+        font-size: 38px;
+        margin-bottom: 0px;
+        margin-top: 65px;
+    }
+
+    .single-page-heading h1 {
+        font-size: 38px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .nav-justified .nav-item,
+    .nav-justified>.nav-link {
+        flex-basis: unset !important;
+    }
+
+    /*=============== Project Single Page END For Mini Laptop ===============*/
+
+    /*=============== Footer Page START For Mini Laptop ===============*/
+
+    .box h3 {
+        top: 49%;
+    }
+
+    .box p {
+        font-size: 11px;
+    }
+
+    .footer {
+        padding: 10px 0px;
+    }
+
+    .email_add span,
+    .phone_no span {
+        font-size: 14px;
+    }
+
+    .office_address h6 {
+        font-size: 14px;
+    }
+
+    .footer_address h2 {
+        font-size: 24px;
+        letter-spacing: 1.7px;
+    }
+
+    .social_icons img {
+        width: 30px;
+    }
+
+    .footer-logo {
+        width: 45px;
+    }
+
+    .social_links1 a,
+    .social_links2 a {
+        margin: 0px 15px;
+    }
+
+    .policy-term {
+        margin-bottom: -5px;
+        margin-top: -10px;
+    }
+
+    .address_icon {
+        width: 81px;
+        margin-left: auto;
+    }
+
+    /*=============== Footer Page END For Mini Laptop ===============*/
+
+}
+
+/******************************** END For Mini Laptop ********************************/
+
+/******************************** START For Ipad Pro Devices ********************************/
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+
+
+    /*=============== Navbar Page Start Ipad Pro ===============*/
+    .navbar.bg-light {
+        height: 60px;
+    }
+
+    .navbar-brand img {
+        height: 30px;
+    }
+
+    .navbar-nav {
+        height: 60px;
+    }
+
+    .navbar-expand-lg .navbar-nav li.nav-item {
+        padding: 16px 8px;
+        font-size: 12px;
+    }
+
+    .mega-menu,
+    .mega-menu2 {
+        /* width: 685px; */
+        padding: 30px 25px;
+    }
+
+    .mega-menu .row h4,
+    .mega-menu2 .row h4 {
+        font-size: 18px;
+    }
+
+    .mega-menu .row ul li a,
+    .mega-menu2 .row ul li a {
+        font-size: 13px;
+    }
+
+    .mega-menu .row .button,
+    .mega-menu2 .row .button {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        margin-top: 17px !important;
+    }
+
+    .mega-menu,
+    .mega-menu2,
+    .mega-menu3 {
+        /* width: 770px; */
+        padding: 15px 25px;
+    }
+
+    .mega-menu .row .col-md-6:nth-child(2) {
+        padding-left: 20px;
+    }
+
+    .mega-menu .row .col-md-6:nth-child(2) .button {
+        width: 70%;
+    }
+
+    .dropdown-menu.mega-menu2 {
+        left: -90px !important;
+    }
+
+    .mega-menu3 {
+        left: -185px !important;
+    }
+
+    /*=============== Navbar Page END Ipad Pro ===============*/
+
+    /*=============== Slider START Ipad Pro ===============*/
+
+    #slider3 .carousel-control-next,
+    #slider3 .carousel-control-prev {
+        height: 46vh;
+    }
+
+    #slider3 .carousel-item,
+    #slider3 .carousel-item img {
+        height: 42vh;
+    }
+
+    #slider3 .carousel-item video {
+        height: 42vh;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-25%);
+        bottom: unset;
+    }
+
+    .carousel-caption h3 {
+        height: 160px;
+        font-size: 24px;
+    }
+
+    #about-us .carousel-item img {
+        height: 200px !important;
+        min-height: 200px;
+    }
+
+    /*=============== Slider END Ipad Pro ===============*/
+
+    /*=============== About Us Section START Ipad Pro ===============*/
+    .aboutus-title h4 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    /*=============== About Us Section END Ipad Pro ===============*/
+
+    /*==================== Market Page and Service Page START Ipad Pro =========================  */
+    .l_news h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+        margin-bottom: -15px;
+        margin-top: 5px;
+    }
+
+    .box p {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    .box h3 {
+        top: 50%;
+        padding: 8px 10px;
+    }
+
+    section.boxes .box:nth-child(5) {
+        display: none;
+    }
+
+    .blog img {
+        height: 150px;
+    }
+
+    .blog p {
+        top: 115px;
+        font-size: 14px;
+    }
+
+    .services {
+        margin-top: 35px;
+    }
+
+    /*==================== Market Page and Service Page END FOr Ipad Pro =========================  */
+
+    /*=============== Project Single Page END For Ipad Pro ===============*/
+
+    .contact-info {
+        margin-left: -66px;
+    }
+
+    .contact-info ul li {
+        width: 300px;
+    }
+
+    .our-sale p {
+        padding: 15px;
+        font-size: 28px;
+    }
+
+    .map iframe {
+        height: 524px;
+    }
+
+    /*=============== Project Single Page END For Ipad Pro ===============*/
+
+    /*================= Project Main Page START For Ipad PRO Devices =================*/
+
+    .Project-page-heading {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .Project-page-heading h1 {
+        font-size: 35px;
+        margin-top: 40px;
+        margin-bottom: -10px;
+    }
+
+    .main-container h1 {
+        font-size: 35px;
+        margin-top: 70px;
+    }
+
+    .single-page-heading h1 {
+        font-size: 35px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .single-page-sub-heading h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+
+    .Product-Page-Banner-Image {
+        height: 350px;
+    }
+
+    .Product-Page-Banner-Image h5 {
+        font-size: 16px;
+    }
+
+    .Product-Page-Banner-Image h2 {
+        font-size: 22px;
+    }
+
+
+    .Product-Page-Banner-Heading {
+        height: 350px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+
+    }
+
+    .project-details {
+        padding-right: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .project-details2 {
+        padding-left: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /*================= Project Main Page END For Ipad PRO Devices =================*/
+
+    /***************************************************************************/
+    /******************** Our-Frim-Page-Details Start ***************************/
+    #our-firm h1 {
+        font-size: 34px !important;
+        margin-top: -65px !important;
+        margin-left: 25px !important;
+        margin-bottom: 20px !important;
+        width: 182px !important;
+    }
+
+    #our-firm h2 {
+        font-size: 34px !important;
+        margin-top: -65px !important;
+        margin-left: 25px !important;
+        margin-bottom: 20px !important;
+        width: 225px !important;
+    }
+
+    #values h2 {
+        font-size: 34px;
+        margin-bottom: -10px;
+    }
+
+    .Our-Frim-Page-Details h2 {
+        font-size: 27px;
+
+    }
+
+    .Our-Frim-Page-Details h3 {
+        font-size: 18px;
+
+    }
+
+    .Our-Team h1 {
+        font-size: 35px;
+    }
+
+    div#our-values,
+    div#our-firm {
+        margin-top: 0px;
+    }
+
+    .social-btn {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /******************** Our-Frim-Page-Details End ***************************/
+    /***************************************************************************/
+
+    /*=============== Related Blog Section START For Ipad Pro ===============*/
+    .blog h5 {
+        top: 118px;
+        left: 10px;
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    /*=============== Related Blog Section END For Ipad Pro ===============*/
+
+    /*=============== Single Job Page Start for Ipad Pro Device ==============*/
+    .Career-Page-Banner-Heading {
+        padding-left: 20px !important;
+        padding-bottom: 15px !important;
+    }
+
+    .job-main-title h1 {
+        font-size: 35px;
+    }
+
+    .job-main-title h5 {
+        font-size: 12px;
+    }
+
+    .job-details h6 {
+        font-size: 12px;
+    }
+
+    .job-main-title {
+        padding: 30px 15px;
+    }
+
+    .job-details {
+        padding: 30px 15px;
+    }
+
+    .job_title h1,
+    .education_ex h2,
+    .expirence_de h2 {
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .job_form .close-btn {
+        font-size: 25px;
+    }
+
+    .office-address p {
+        width: 70%;
+        font-size: 15px !important;
+    }
+
+    .address_icon i {
+        font-size: 14px;
+    }
+
+    .office-address a {
+        margin-right: 2px !important;
+    }
+
+    /*=============== Single Job Page End for Ipad PRO Device ==============*/
+
+    /*=============== Footer Page START For Ipad PRO Device ===============*/
+    .nav-justified .nav-item,
+    .nav-justified>.nav-link {
+        flex-basis: unset !important;
+    }
+
+    .footer {
+        padding: 10px 0px;
+    }
+
+    .footer_address h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .office_address h6 {
+        font-size: 14px !important;
+    }
+
+    .email_add a,
+    .phone_no a,
+    .phone_no .fa-phone,
+    .email_add .fa-envelope {
+        font-size: 14px !important;
+    }
+
+    .col-md-2.my_contact {
+        margin-left: -40px;
+        width: 190px;
+    }
+
+    .social_icons img {
+        width: 28px !important;
+    }
+
+    .contact_info {
+        margin: 15px 0px !important;
+    }
+
+    /*=============== Footer Page END For Ipad PRO Device ===============*/
+}
+
+/******************************** END For Ipad Pro Devices ********************************/
+
+/******************************** START For Ipad  IOS Devices *********************************/
+@media screen and (max-width:991px) and (min-width: 768px) {
+
+    /*=============== Hamburger Start For Ipad ===============*/
+    nav.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light {
+        position: relative;
+    }
+
+    .navbar.bg-light,
+    .navbar-nav {
+        height: unset;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        align-items: flex-start;
+    }
+
+
+    .navbar-brand img {
+        height: 34px;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: unset;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: unset;
+    }
+
+    .navbar-expand-lg .navbar-nav li.nav-item {
+        height: unset;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 10px;
+    }
+
+    .navbar-expand-lg .navbar-nav li.nav-item {
+        padding: 10px 0px 5px 0px;
+        font-size: 13px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0px;
+    }
+
+    .mega-menu,
+    .mega-menu2,
+    .mega-menu3 {
+        width: 720px;
+        padding: 10px 30px;
+    }
+
+    .dropdown-menu.mega-menu,
+    .dropdown-menu.mega-menu2 {
+        margin-top: 0.01rem;
+    }
+
+    .mega-menu .row h4,
+    .mega-menu2 .row h4 {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .mega-menu .row ul li a,
+    .mega-menu2 .row ul li a {
+        font-size: 12px;
+        /* margin-left: -37px; */
+    }
+
+    .mega-menu .row .button,
+    .mega-menu2 .row .button {
+        margin-top: 10px;
+        padding: 3px 8px;
+        font-size: 13px;
+        width: 85%;
+    }
+
+    .mega-menu .row .button:hover,
+    .mega-menu2 .row .button:hover {
+        width: 90%;
+    }
+
+    .mega-menu .row .col-md-6:nth-child(2) .button {
+        width: 85%;
+    }
+
+    .mega-menu .row .col-md-6:nth-child(2) .button:hover {
+        width: 90%;
+    }
+
+    /*=============== Hamburger END For Ipad ===============*/
+
+    /*=============== Slider START Ipad ===============*/
+
+    #slider3 .carousel-control-next,
+    #slider3 .carousel-control-prev {
+        height: 35vh;
+    }
+
+    #slider3 .carousel-item {
+        height: 35vh;
+    }
+
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: unset;
+    }
+
+    .carousel-caption h3 {
+        height: 95px;
+        font-size: 22px;
+    }
+
+    #about-us .carousel-item img {
+        height: 180px !important;
+        min-height: 180px;
+    }
+
+    /*=============== Slider END Ipad ===============*/
+
+
+    /*=============== Home Page Title Sub-title Start ===============*/
+    .aboutus-title h4 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .sub-title h3 {
+        font-size: 15px;
+    }
+
+    .sub-title p {
+        font-size: 13px;
+    }
+
+    #about-us .aboutus-title {
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    .l_news h1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: -20px;
+        margin-top: 0px;
+    }
+
+    .box h3 {
+        top: 49%;
+    }
+
+    .box p {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    /*=============== Home Page Title Sub-title End ===============*/
+
+    /*==================== Market & Service Page START For Ipad =========================  */
+    .main-container h1 {
+        font-size: 40px;
+        margin-top: 0px;
+    }
+
+    .main-container p {
+        font-size: 15px;
+    }
+
+    .blog img {
+        height: 150px;
+    }
+
+    .single-page-heading .video {
+        height: 100%;
+    }
+
+    .single-page-heading h1 {
+        font-size: 20px;
+        margin-top: -70px;
+        margin-bottom: -25px;
+    }
+
+    .single-page-sub-heading h4 {
+        font-size: 18px;
+        padding-top: 0px;
+    }
+
+    .single-page-sub-heading p {
+        font-size: 15px;
+    }
+
+    .services {
+        margin-top: 25px;
+    }
+
+    /*=============== Related Blog Section START For Ipad ===============*/
+    .blog h5 {
+        top: 122px;
+        left: 8px;
+        font-size: 13px;
+        padding: 4px;
+    }
+
+    /*=============== Related Blog Section END For Ipad ===============*/
+
+    /*==================== Market & Service Page END For Ipad =========================  */
+
+    /*=============== Project Single Page END For Ipad ===============*/
+    .project-header img {
+        height: 380px;
+    }
+
+    img.header-img.w-100 {
+        height: 380px;
+    }
+
+    .project-header {
+        margin-top: 30px;
+    }
+
+    .address h3,
+    .address p {
+        font-size: 16px;
+    }
+
+    .social-share-1 img {
+        width: 32px;
+    }
+
+    .project-details {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 40px;
+    }
+
+    .project-details2 {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .our-sale p {
+        padding: 20px;
+        font-size: 26px;
+    }
+
+    .recent-projects img {
+        height: 320px;
+    }
+
+    .recent-projects h3 {
+        font-size: 16px;
+    }
+
+    .recent-projects p {
+        font-size: 13px;
+    }
+
+    .gallery h4 {
+        font-size: 16px;
+    }
+
+    .news-social .social-share-1 img {
+        width: 30px;
+    }
+
+    #news_banner {
+        margin-top: 35px;
+    }
+
+    /*=============== Project Single Page END For Ipad ===============*/
+
+
+    /*================= Project Main Page START For Ipad Devices =================*/
+
+    .Project-page-heading {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .Project-page-heading h1 {
+        font-size: 35px;
+        margin-top: 0px;
+    }
+
+    .Product-Page-Banner-Image {
+        height: 350px;
+    }
+
+    .Product-Page-Banner-Image h5 {
+        font-size: 16px;
+    }
+
+    .Product-Page-Banner-Image h2 {
+        font-size: 22px;
+    }
+
+
+    .Product-Page-Banner-Heading {
+        height: 350px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+
+    }
+
+    .Project-Page-select-category {
+        align-items: flex-end !important;
+    }
+
+    div#filter {
+        width: 160px;
+        margin-top: -40px;
+        margin-bottom: -20px;
+    }
+
+    div#filter input#reset,
+    div#filter button#search {
+        margin-top: 40px;
+    }
+
+    .col-lg-4.g-0.map {
+        height: 350px !important;
+    }
+
+    /*================= Project Main Page END For Ipad Devices =================*/
+
+
+    /*=============== Our Frim Page START For IPad Devices ===============*/
+    #our-firm .video-full {
+        margin-top: -20px !important;
+    }
+
+    .video-full {
+        margin-top: -10px;
+    }
+
+    div#values {
+        margin-top: -25px;
+    }
+
+    #our-firm h1 {
+        width: 170px !important;
+        font-size: 30px !important;
+        margin-top: -110px !important;
+        margin-left: 20px !important;
+        margin-bottom: 30px;
+    }
+
+    #our-firm h2 {
+        width: 210px !important;
+        font-size: 30px !important;
+        margin-top: -110px !important;
+        margin-left: 20px !important;
+        margin-bottom: 30px;
+    }
+
+    .team img {
+        height: 150px;
+    }
+
+    .team h5 {
+        font-size: 11px;
+    }
+
+    .team h6 {
+        font-size: 10px;
+    }
+
+    .team p {
+        font-size: 9px;
+        margin-bottom: 8px;
+    }
+
+    .Our-Team h1 {
+        font-size: 35px;
+    }
+
+    #values h1 {
+
+        margin-bottom: 5px !important;
+    }
+
+    #values h2 {
+        font-size: 30px;
+        margin-bottom: -15px;
+        margin-top: 10px;
+    }
+
+    /* div#our-values,
+    div#our-firm {
+        margin-top: 0px;
+    } */
+    .social-btn {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .social-btn a i {
+        font-size: 20px !important;
+    }
+
+    /******************** Our-Frim-Page-Details START ***************************/
+
+    .Our-Frim-Page-Details h2 {
+        font-size: 27px;
+
+    }
+
+    .Our-Frim-Page-Details h3 {
+        font-size: 18px;
+
+    }
+
+    /******************** Our-Frim-Page-Details End ***************************/
+
+    /*=============== Our Frim Page END For Ipad   Devices ===============*/
+
+    /*=============== Single Job Page Start for Ipad  Device ==============*/
+    .job-main-title h1 {
+        font-size: 25px;
+    }
+
+    .job-main-title h5 {
+        font-size: 10px;
+    }
+
+    .job-details h6 {
+        font-size: 10px;
+    }
+
+    .job-main-title {
+        padding: 30px 15px;
+    }
+
+    .job-details {
+        padding: 30px 15px;
+    }
+
+    .Career-Page-Search input {
+        padding: 3px 10px;
+    }
+
+    .Career-Page-Search button {
+        padding: 9px 16px;
+    }
+
+    .Career-Page-Banner-Image {
+        margin-top: 0px;
+    }
+
+    /*=============== Single Job Page End for Ipad Device ==============*/
+
+    /*=============== Related Posts START for Ipad Device ==============*/
+    .Related-Project h4 {
+        font-size: 24px;
+    }
+
+    /*=============== Related Posts END for Ipad Device ==============*/
+
+    /*=============== Contact US Page START for Ipad Device ==============*/
+    .contact-banner {
+        margin-top: 36px;
+    }
+
+    .office-address p {
+        width: 65%;
+        font-size: 13px !important;
+    }
+
+    .address_icon i {
+        font-size: 12px;
+    }
+
+    .office-address a {
+        margin-right: 2px !important;
+    }
+
+    .nav-justified .nav-item,
+    .nav-justified>.nav-link {
+        flex-basis: unset !important;
+    }
+
+    .footer_address h2 {
+        font-size: 16px !important;
+        letter-spacing: 0px !important;
+    }
+
+    .office_address h6 {
+        font-size: 12px !important;
+    }
+
+    .email_add a,
+    .phone_no a,
+    .phone_no .fa-phone,
+    .email_add .fa-envelope {
+        font-size: 10px !important;
+    }
+
+    .social_icons img {
+        width: 25px !important;
+    }
+
+    .contact_info {
+        margin: 10px 0px !important;
+    }
+
+    .phone_no {
+        margin-bottom: 0px !important;
+    }
+
+    .col-md-2.my_contact {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: -30px;
+    }
+
+    .footer_address {
+        padding-right: 0px;
+    }
+
+    .footer_address .container {
+        padding-right: 0px;
+    }
+
+    .office_address {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .social_links1 {
+        margin-left: 0px;
+    }
+
+    .social_links2 {
+        margin-right: 0px;
+    }
+
+    .footer-logo {
+        width: 45px;
+    }
+
+    /*=============== Contact US Page END for Ipad Device ==============*/
+
+}
+
+/******************************** END For Ipad  IOS Devices *********************************/
+
+/******************************* START For Mobile Devices ********************************/
+@media screen and (max-width: 767px) {
+
+    /*=============== Hamburger Start For Mobile Devices ===============*/
+    nav.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light {
+        position: relative;
+    }
+
+    .navbar.bg-light,
+    .navbar-nav {
+        height: auto !important;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        align-items: flex-start;
+    }
+
+    .navbar-brand img {
+        height: 28px;
+    }
+
+    .navbar-brand {
+        padding-top: unset;
+        padding-bottom: unset;
+        margin-right: unset;
+        font-size: unset;
+    }
+
+    .navbar-toggler {
+        padding: .2rem .5rem;
+        font-size: 1.05rem;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.25em;
+        height: 1.25em;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: unset;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 10px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: unset;
+    }
+
+    .navbar-expand-lg .navbar-nav li.nav-item {
+        height: unset;
+        width: 100%;
+    }
+
+    .navbar-expand-lg .navbar-nav li.nav-item {
+        padding: 8px 0px 4px 0px;
+        font-size: 13px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0px;
+    }
+
+    .mega-menu,
+    .mega-menu2,
+    .mega-menu3 {
+        width: 100%;
+    }
+
+    /* ul.mega-menu .row .col-md-4,
+    ul.mega-menu2 .row .col-md-4 {
+        margin-top: 20px;
+    } */
+
+    .mega-menu .row h4,
+    .mega-menu2 .row h4 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .mega-menu .row ul li a,
+    .mega-menu2 .row ul li a {
+        font-size: 12px;
+    }
+
+    .mega-menu .row .button,
+    .mega-menu2 .row .button {
+        margin-top: 5px;
+        padding: 2px 6px;
+        font-size: 12px;
+        width: 70%;
+    }
+
+    .mega-menu .col-md-6 {
+        padding-top: 15px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        margin-top: 8px !important;
+    }
+
+    .mega-menu,
+    .mega-menu2,
+    .mega-menu3 {
+        padding: 5px 10px 10px 10px;
+    }
+
+    .mega-menu .row ul li,
+    .mega-menu2 .row ul li,
+    .mega-menu3 .row ul li {
+        padding: 3px;
+        font-size: 12.5px;
+    }
+
+    section.boxes .box:nth-child(5) {
+        display: none;
+    }
+
+    .mega-menu .col-md-6:nth-child(2) {
+        padding-left: 15px;
+    }
+
+    .mega-menu .row .col-md-6:nth-child(2) .button {
+        width: 70%;
+    }
+
+    .mega-menu .row .col-md-6:nth-child(2) .button:hover {
+        width: 75%;
+    }
+
+    /*=============== Hamburger END For Mobile Devices ===============*/
+
+    /*=============== Slider START For Mobile Devices ===============*/
+
+    /* #slider3 video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto !important;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #slider3 .carousel-caption h3 {
+        height: unset !important;
+        text-align: center !important;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    .carousel-item {
+        height: unset;
+        min-height: unset;
+    } */
+
+    #about-us .carousel-item img {
+        height: 200px !important;
+        min-height: 200px;
+        object-fit: cover;
+    }
+
+    /* .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 1rem !important;
+        height: 1rem !important;
+    } */
+
+
+    /* #slider3 {
+        display: none !important;
+    }
+
+
+    #slider4 {
+        display: block !important;
+    } */
+    #slider3{
+        display: block;
+    }
+    #slider3 .carousel-item {
+        height: 100vh;
+    }
+
+    #slider3 .carousel-item video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        object-fit: cover;
+        max-height: 100%;
+        opacity: 0.6;
+    }
+
+    #slider3 .carousel-caption {
+        bottom: 50% !important;
+        transform: translate(0%, 50%);
+        left: 10% !important;
+        right: 10% !important;
+    }
+
+
+    /* #slider3 .carousel-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        object-fit: cover;
+    } */
+
+    /* #slider3 .carousel-item video {
+        max-height: 100%;
+    }
+
+    .mask {
+        z-index: 2;
+    } */
+
+    #slider3 .carousel-caption h3 {
+        height: unset !important;
+        text-align: center !important;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    #slider3 .carousel-control-next, #slider3 .carousel-control-prev {
+        height: 100vh;
+    }
+    #slider3 .carousel-control-next{
+        right: -10px;
+    }
+
+    #slider3 .carousel-control-prev {
+        left: -10px;
+    }
+    /* .shadow-effect {
+        background-color: black;
+        background: black;
+    }
+
+    #slider3 .owl-carousel {
+        background: black;
+    }
+
+    .featured-products .owl-next,
+    .featured-products .owl-prev {
+        width: 40px !important;
+        height: 40px !important;
+        line-height: 50px !important;
+        border-radius: 50% !important;
+        position: absolute !important;
+        top: 45% !important;
+        font-size: 30px !important;
+        color: rgb(255, 255, 255) !important;
+        text-align: center !important;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: unset !important;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .featured-products .owl-nav .owl-prev {
+        left: -5px;
+    }
+
+    .featured-products .owl-nav .owl-next {
+        right: -5px;
+    }
+
+    .featured-products .owl-nav .owl-next:focus-visible,
+    .featured-products .owl-nav .owl-prev:focus-visible {
+        outline: -webkit-focus-ring-color auto 0px;
+    } */
+
+    /*=============== Slider END For Mobile Devices ===============*/
+
+    /*=============== About Us START For Mobile Devices ===============*/
+    div#about-us {
+        padding-left: 12px;
+        padding-right: 12px !important;
+    }
+
+    #about-us .aboutus-title {
+        margin: 30px 0px 0px 0px;
+    }
+
+    .aboutus-title h4 {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+
+    .sub-title h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .sub-title p {
+        padding-right: unset;
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    div#slider2 {
+        margin-top: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .l_news h1 {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        margin-bottom: -25px;
+        margin-top: 15px;
+    }
+
+    .boxes {
+        padding-right: 12px;
+    }
+
+    .box img {
+        width: 100%;
+        height: 145px;
+    }
+
+    .box h3 {
+        top: 48%;
+        left: 3%;
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .box p {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .boxes {
+        grid-gap: 8px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    /*=============== About Us Section END For Mobile Devices ===============*/
+
+    /*================= Market & Service Page START For Mobile Devices ==========================*/
+    .main-container p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 20.2px;
+        padding-bottom: 5px;
+
+    }
+
+    .main-container h1 {
+        font-size: 35px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .services {
+        margin-top: 15px;
+    }
+
+    /*================= Market & Service Page END For Mobile Devices ==========================*/
+
+
+    /*================= Market & Service Single Page START For Mobile Devices =========================*/
+    .single-page-heading img {
+        height: 300px;
+        margin-top: -10px;
+    }
+
+    .single-page-heading .video {
+        height: 100%;
+        margin-top: -10px;
+
+    }
+
+    .policy-term a {
+        font-size: 11px;
+    }
+
+    .single-page-heading {
+        margin-top: -70px;
+    }
+
+    .single-page-heading h1 {
+        font-size: 20px;
+        padding-bottom: 11px !important;
+        line-height: 30px !important;
+    }
+
+    .single-page-sub-heading h4 {
+        font-size: 14px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .single-page-sub-heading p {
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+
+    .Related-Project h4 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .Related-News h4 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    /*================= Market & Service Single Page END For Mobile Devices =================*/
+
+
+    /*================= Project Main Page START For Mobile Devices =================*/
+    #filter label {
+        font-size: 12px;
+    }
+
+    #filter select {
+        font-size: 10px;
+        width: 80px;
+        padding: 2px;
+        outline: none;
+        background-size: 12px;
+        background-position: calc(100% - 5px) 8px;
+        padding-right: 16px;
+    }
+
+    .filter_search_btn .btn {
+        display: none;
+    }
+
+    .filter_search_btn .btn#reset {
+        display: none !important;
+    }
+
+    .filter_search_btn .icons {
+        display: flex;
+    }
+
+    .filter_search_btn .icons #reset {
+        display: flex !important;
+        margin-top: 5px !important;
+    }
+
+    div#filter.filter_btns {
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-end;
+    }
+
+
+    .icons {
+        display: flex;
+        width: 35px;
+        justify-content: space-between;
+        align-self: flex-end;
+    }
+
+    #filter button.btn.btn-dark.btn-sm,
+    div#filter input#reset {
+        font-size: 12px;
+        padding: 2px 7px;
+    }
+
+    i#search {
+        margin-top: 5px !important;
+        margin-left: 5px !important;
+    }
+
+    .Project-page-heading {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .Project-page-heading h1 {
+        font-size: 35px;
+        margin-top: -10px;
+    }
+
+    .Product-Page-Banner-Image {
+        height: 200px;
+        margin-top: 12px !important;
+    }
+
+    #project_video {
+        margin-top: 10px;
+    }
+
+    #news_banner {
+        margin-top: 0px;
+    }
+
+    .Product-Page-Banner-Heading {
+        height: 200px;
+        padding: 0px 15px 15px 8px;
+
+    }
+
+    .Product-Page-Banner-Heading h5 {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+    .Product-Page-Banner-Heading h2 {
+
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+    .Project-Page-select-category span {
+        font-size: 12px;
+    }
+
+    .Project-Page-select-category {
+        padding-top: 0px;
+        padding-bottom: 5px;
+        width: 95%;
+    }
+
+    /*================= Project Main Page END For Mobile Devices =================*/
+
+
+    /*=============== Project Single Page END For Mobile Devices ===============*/
+    .project-header {
+        margin-top: 0px;
+    }
+
+    .project-header img {
+        height: 210px;
+    }
+
+    img.header-img.w-100 {
+        height: 210px;
+    }
+
+    .contact-info,
+    .address {
+        padding: 0px 10px;
+    }
+
+    .address h3,
+    .address p {
+        font-size: 16px;
+    }
+
+    .project-about {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin-bottom: -50px;
+    }
+
+    .Under-construction {
+        margin-bottom: 20px;
+    }
+
+    .social-share-1 img {
+        width: 28px;
+    }
+
+    .address .social-share-1 {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .news-social {
+        margin: -36px 0px 15px 10px;
+        justify-content: flex-start;
+    }
+
+    .our-sale p {
+        padding: 18px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .map,
+    #map {
+        height: 350px !important;
+    }
+
+    .recent-projects img {
+        height: 200px;
+    }
+
+    .recent-projects2 {
+        flex-direction: column-reverse;
+        /* padding: 10px 0px; */
+        padding: 10px 0px 25px 0px;
+    }
+
+    .recent-projects h3 {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .recent-projects p {
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+
+    .project-details {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: unset;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .project-details2 {
+        padding-bottom: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: unset;
+    }
+
+    .gallery h4 {
+        width: 100%;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .gallery .m-3 {
+        margin: 0px !important;
+    }
+
+    .gallery .blog img {
+        height: 100px;
+    }
+
+    /*=============== Project Single Page END For Mobile Devices ===============*/
+
+    /*=============== Our Frim Page START For Mobile Devices ===============*/
+    .social-btn {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .social-btn a i {
+        font-size: 18px !important;
+    }
+
+    #our-firm .video-full {
+        margin-top: 20px !important;
+    }
+
+    .video-full {
+        height: 250px;
+        position: relative;
+        width: 100%;
+        margin-top: 0px;
+        overflow: hidden;
+    }
+
+    #project_video .video-full {
+        margin-top: -25px !important;
+    }
+
+    .Our-Frim-Page-Banner-Image {
+        height: 250px;
+    }
+
+    .Our-Frim-Page-Banner-Heading {
+        height: 250px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .Our-Frim-Page-Banner-Heading h1 {
+        font-size: 16px;
+    }
+
+    .Our-Frim-Page-Details h2 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .Our-Frim-Page-Details h3 {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .Our-Frim-Page-sub-heading {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .team img {
+        height: 150px;
+    }
+
+    .team h5 {
+        font-size: 12px;
+    }
+
+    .team h6 {
+        font-size: 11px;
+    }
+
+    .team p {
+        font-size: 9px;
+        margin-bottom: 8px;
+    }
+
+    div#our-values,
+    div#our-firm {
+        margin-top: -30px;
+    }
+
+    #our-firm h1 {
+        font-size: 20px !important;
+        width: 115px !important;
+        margin-left: 10px !important;
+        margin-top: -62px !important;
+    }
+
+    #our-firm h2 {
+        font-size: 20px !important;
+        width: 140px !important;
+        margin-left: 10px !important;
+        margin-top: -62px !important;
+    }
+
+
+    #values h1 {
+        font-size: 15px;
+    }
+
+    #our-team h1 {
+        font-size: 15px !important;
+    }
+
+    #our-team p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .row.Our-Team .team p {
+        text-align: center !important;
+    }
+
+    #innovation ul li {
+        font-size: 13px;
+    }
+
+    .recent-projects {
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
+
+    #values p a {
+        pointer-events: initial !important;
+    }
+
+
+    /*=============== Our Frim Page END For Mobile Devices ===============*/
+
+    /*=============== Related Blog Section START For Mobile Devices ===============*/
+    .blog h5 {
+        top: 162px;
+        left: 10px;
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    /*=============== Related Blog Section END For Mobile Devices ===============*/
+
+    /*=============== Career Page START For Mobile Devices ===============*/
+    .Career-Page-Banner-Image {
+        height: 300px;
+        margin-top: -36px;
+    }
+
+    .Career-Page-Banner-Heading {
+        height: 300px;
+        padding-left: 18px;
+        padding-bottom: 13px;
+    }
+
+    .career_dec {
+        text-align: justify;
+    }
+
+    .Career-Page-Search input {
+        padding: 0px 10px;
+        font-size: 12px;
+        width: 50%;
+        margin-left: -4px;
+    }
+
+    .Career-Page-Search h3 {
+        font-size: 16px;
+    }
+
+    .job-search {
+        flex-direction: column;
+        margin-top: 35px !important;
+        margin-bottom: -25px !important;
+    }
+
+    #search-box {
+        width: 100%;
+    }
+
+    /*=============== Career Page END For Mobile Devices ===============*/
+
+    /*=============== Career Inner Page Start for Mobile Device ==============*/
+    .Career-inner-Page-Banner-Image {
+        height: 300px !important;
+        margin-top: -36px !important;
+    }
+
+    .Career-inner-Page-Banner-Heading {
+        height: 300px !important;
+        padding-left: 15px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .jobs {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .jobs-section h3 {
+        font-size: 14px !important;
+    }
+
+    .jobs-section h6 {
+        font-size: 12px !important;
+    }
+
+    .jobs-section span {
+        font-size: 12px !important;
+    }
+
+    .jobs-section i {
+        font-size: 20px !important;
+    }
+
+    /*=============== Career Inner Page End for Mobile Device ==============*/
+
+
+    /*=============== Single Job Page Start for Mobile Device ==============*/
+    .job-search,
+    .search-btn {
+        margin-bottom: 20px;
+    }
+
+    .Career-Page-Search button {
+        padding: 4px 8px;
+        margin: 15px 10px;
+        font-size: 13px;
+        width: 80px;
+        letter-spacing: 0;
+    }
+
+    .career_page p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+
+    .job-main-title h1 {
+        font-size: 13px !important;
+    }
+
+    .job-main-title h5 {
+        font-size: 10px !important;
+    }
+
+    .job-details h6 {
+        font-size: 10px !important;
+    }
+
+    .job-main-title {
+        padding: 20px 10px !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .job-details {
+        padding: 20px 10px 10px 10px !important;
+    }
+
+    .job-description h3 {
+        font-size: 14px !important;
+        margin-top: 20px !important;
+    }
+
+    .job-description h6 {
+        font-size: 12px !important;
+    }
+
+    .apply-button {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .apply-button button {
+        padding: 8px;
+        font-size: 12px;
+        border: unset;
+        background-color: black;
+        color: white;
+    }
+
+    /* Career Job Fomr START*/
+    .job_form {
+        width: 300px !important;
+        padding: 20px !important;
+    }
+
+    .job_title h2 {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+
+    .job_form .close-btn {
+        right: 10px !important;
+        top: 10px !important;
+        font-size: 20px !important;
+    }
+
+    .job_form form .data {
+        height: 30px !important;
+        width: 100% !important;
+        margin: 35px 0 !important;
+    }
+
+    .job_form form .data label {
+        font-size: 14px !important;
+        margin-bottom: 1px !important;
+    }
+
+    .education_ex p,
+    .expirence_de p {
+        font-size: 14px !important;
+    }
+
+    button#ed_history,
+    button#edu_cancel,
+    button#exp_history,
+    button#exp_cancel {
+        font-size: 16px;
+    }
+
+    button#edu_done,
+    button#exp_done {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .submit_form {
+        width: 90px !important;
+        font-size: 18px !important;
+        padding: 5px !important;
+        margin: 15px 0px !important;
+    }
+
+    .office-address p {
+        width: 70%;
+        font-size: 13px !important;
+    }
+
+    .address_icon i {
+        font-size: 12px;
+    }
+
+    .office-address a {
+        margin-right: 2px !important;
+    }
+
+    /*=============== Single Job Page End for Mobile Device ==============*/
+
+    /*=============== Table Responsive START For Mobile Devices ===============*/
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        display: block;
+    }
+
+    table td {
+        display: block;
+        font-size: .8em;
+        text-align: left;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    .social-btn a i {
+        font-size: 18px;
+    }
+
+    /*=============== Table Responsive END For Mobile Devices ===============*/
+
+    /*=============== Contact us Page START For Mobile Devices ===============*/
+    .contact-banner {
+        margin-top: 13px;
+    }
+
+    .contact-banner img {
+        height: 270px;
+    }
+
+    .contact-banner h3 {
+        bottom: 6px;
+        left: 25px;
+        font-size: 20px;
+    }
+
+    #press,
+    #acadmic_r,
+    #career,
+    #b_inquery,
+    #other {
+        margin-top: 40px;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .tab-content.container h5 {
+        font-size: 16px;
+    }
+
+    .contact-form-tabs .nav-link {
+        padding: .5rem .5rem;
+    }
+
+    .contact-info input,
+    .project-info .search,
+    .aca-contact-info input,
+    .ac-project-info .search,
+    .career-contact-info input,
+    .career-job input,
+    .career-job select,
+    .inquery-contact-info input,
+    .other-contact-info input,
+    .other-your_msg input,
+    .other-your_msg select {
+        padding: 7px 9px !important;
+        font-size: 13px;
+    }
+
+    input#attachment {
+        font-size: 12px;
+    }
+
+    .next,
+    .prev,
+    .submit {
+        font-size: 14px;
+    }
+
+    .nav-justified .nav-item,
+    .nav-justified>.nav-link {
+        flex-basis: unset !important;
+    }
+
+    .contact-form-tabs li.nav-item {
+        margin-bottom: 10px;
+    }
+
+    /*=============== Contact us Page END For Mobile Devices ===============*/
+
+    /*=============== Footer Page START For Mobile Devices ===============*/
+    .footer-logo {
+        width: 30px;
+        margin-bottom: 0px;
+        margin-left: -20px;
+    }
+
+    .footer {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .my_contact {
+        display: flex;
+    }
+
+    .footer_address h2 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .office_address h6 {
+        font-size: 13px;
+    }
+
+    .phone_no {
+        margin-bottom: 3px;
+    }
+
+    .contact_info {
+        margin: 8px 0px 10px !important;
+    }
+
+    .phone_no .fa-phone,
+    .email_add .fa-envelope {
+        font-size: 12px !important;
+    }
+
+    .contact_us {
+        width: 53%;
+    }
+
+    .contact_info span {
+        font-size: 13px;
+    }
+
+    .social_icons img {
+        width: 25px;
+        margin-left: 4px;
+    }
+
+    .social_links a {
+        margin: 0px;
+    }
+
+    .social_links1,
+    .social_links2 {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        text-align: justify;
+        margin: 0px !important;
+    }
+
+    .policy-term {
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+
+    .social_links1 a,
+    .social_links2 a {
+        margin: 0px 0px;
+    }
+
+    /*=============== Footer Page END For Mobile Devices ===============*/
+
+    /*=============== Cookies START For Mobile Devices ===============*/
+    .content {
+        max-width: 340px;
+        padding: 20px;
+        backdrop-filter: unset !important;
+    }
+    /*=============== Cookies END For Mobile Devices ===============*/
+}
+
+@media screen and (max-width: 325px) {
+    .get_social {
+        margin-left: 8px;
+    }
+
+    .social_icons img {
+        width: 23px;
+    }
+
+    .contact_info span {
+        font-size: 11px;
+    }
+
+    .filter_search_btn .icons #reset {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    /*=============== Cookies START For Mobile Devices ===============*/
+    .content {
+        max-width: 300px;
+        padding: 10px;
+        margin: 10px;
+    }
+    /*=============== Cookies END For Mobile Devices ===============*/
+}
+
+/******************************* END For Mobile Devices ********************************/
